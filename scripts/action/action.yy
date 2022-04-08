@@ -6,7 +6,7 @@
     "path": "folders/Objects/Player/function.yy",
   },
   "resourceVersion": "1.0",
-  "name": "update_player_sprite",
+  "name": "action",
   "tags": [],
   "resourceType": "GMScript",
 }
