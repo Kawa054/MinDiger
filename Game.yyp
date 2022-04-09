@@ -1,17 +1,22 @@
 {
   "resources": [
+    {"id":{"name":"spr_dialog_bg","path":"sprites/spr_dialog_bg/spr_dialog_bg.yy",},"order":0,},
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},"order":3,},
+    {"id":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},"order":0,},
     {"id":{"name":"tile_field","path":"tilesets/tile_field/tile_field.yy",},"order":0,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":0,},
     {"id":{"name":"update_player_position","path":"scripts/update_player_position/update_player_position.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"obj_dialog","path":"objects/obj_dialog/obj_dialog.yy",},"order":1,},
     {"id":{"name":"spr_field_tile","path":"sprites/spr_field_tile/spr_field_tile.yy",},"order":0,},
+    {"id":{"name":"font_main","path":"fonts/font_main/font_main.yy",},"order":0,},
     {"id":{"name":"update_player_sprite","path":"scripts/update_player_sprite/update_player_sprite.yy",},"order":2,},
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
     {"id":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":1,},
+    {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":2,},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},"order":2,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
     {"id":{"name":"action","path":"scripts/action/action.yy",},"order":0,},
@@ -32,6 +37,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
@@ -58,6 +64,10 @@
     {"folderPath":"folders/Sprites/TileSet.yy","order":4,"resourceVersion":"1.0","name":"TileSet","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/NPC.yy","order":2,"resourceVersion":"1.0","name":"NPC","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Player/function.yy","order":4,"resourceVersion":"1.0","name":"function","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/UI.yy","order":4,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/UI/Dialog.yy","order":1,"resourceVersion":"1.0","name":"Dialog","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/UI.yy","order":5,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/UI/Dialog.yy","order":1,"resourceVersion":"1.0","name":"Dialog","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
