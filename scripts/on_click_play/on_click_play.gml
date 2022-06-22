@@ -1,6 +1,5 @@
 function on_click_play(){
-	show_debug_message("pressed play button");
-	is_menu_opening = false;
-	room_stat = ROOM_START_STAT_PREPARE;
+	rm_start_manager.is_menu_opening = false;
+	rm_start_manager.room_stat = ROOM_START_STAT_DATAS;
 	instance_destroy(obj_simple_button);
 }
