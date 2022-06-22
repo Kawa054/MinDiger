@@ -1,5 +1,6 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function create_savedata(data_index){
-
+	ini_open("SaveData/data" + string(data_index) + "/savedata.ini");
+	ini_write_string("savedata_info", "Exist SaveData", "1");
+	ini_close();
+	load_savedata(data_index);
 }

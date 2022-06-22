@@ -37,9 +37,9 @@ switch(room_stat){
 				
 				//セーブデータがない場合の処理(TODO: -1の場合を書く)
 				if(is_exist_save_data == "0"){
-					create_simple_button(select_data_x, select_data_y + (i-1)*data_button_sep_y, data_button_width, data_button_height, "No Data", create_savedata());
+					create_datasend_button(select_data_x, select_data_y + (i-1)*data_button_sep_y, data_button_width, data_button_height, "No Data", create_savedata, i);
 				}else{
-					create_simple_button(select_data_x, select_data_y + (i-1)*data_button_sep_y, data_button_width, data_button_height, "Data" + string(i), load_savedata());	
+					create_datasend_button(select_data_x, select_data_y + (i-1)*data_button_sep_y, data_button_width, data_button_height, "Data" + string(i), load_savedata, i);	
 				}
 			}
 		}
