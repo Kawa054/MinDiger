@@ -7,6 +7,8 @@ draw_set_color(c_white);
 draw_set_valign(fa_top);
 draw_set_halign(fa_middle);
 
+is_menu_opening = false;
+
 //起動時に全画面表示にする
 if window_get_fullscreen(){
     window_set_fullscreen(false);

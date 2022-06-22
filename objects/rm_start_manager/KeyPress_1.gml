@@ -4,7 +4,6 @@ switch(room_stat){
 	break;
 	
 	case ROOM_START_STAT_SELECT:
-	
 	break;
 	
 	default:
