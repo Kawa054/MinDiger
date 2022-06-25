@@ -1,5 +1,5 @@
-textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0]) + 144;
+textbox_x = display_get_width() / 2;
+textbox_y = display_get_height() - 50;
 
 if(!textbox_setup){
 	textbox_setup = true;
@@ -10,7 +10,7 @@ if(!textbox_setup){
 	
 	page_num = array_length(text);
 	for(var i = 0; i < page_num; i++){
-		text_length[i] = string_length(text[i])/2;
+		text_length[i] = string_length(text[i]);
 		text_x_offset[i] = 44;
 	}	
 }

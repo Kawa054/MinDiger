@@ -21,6 +21,7 @@
     {"id":{"name":"update_player_sprite","path":"scripts/update_player_sprite/update_player_sprite.yy",},"order":2,},
     {"id":{"name":"create_setting_file","path":"scripts/create_setting_file/create_setting_file.yy",},"order":1,},
     {"id":{"name":"obj_simple_button","path":"objects/obj_simple_button/obj_simple_button.yy",},"order":0,},
+    {"id":{"name":"register_text","path":"scripts/register_text/register_text.yy",},"order":0,},
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},"order":1,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
     {"id":{"name":"on_click_exit","path":"scripts/on_click_exit/on_click_exit.yy",},"order":1,},
@@ -56,8 +57,8 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
-    {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_dialog","path":"rooms/rm_dialog/rm_dialog.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -94,6 +95,7 @@
     {"folderPath":"folders/Objects/UI/Button/function.yy","order":1,"resourceVersion":"1.0","name":"function","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/UI/Button/onClick.yy","order":2,"resourceVersion":"1.0","name":"onClick","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/UI/Button/onClick/rm_start.yy","order":1,"resourceVersion":"1.0","name":"rm_start","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/UI/Dialog/function.yy","order":3,"resourceVersion":"1.0","name":"function","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
