@@ -20,6 +20,13 @@ function action(argument0, argument1, argument2){
 			instance_id_data = instance_place(x, y + action_height*y_direction, obj_npc);
 		}
 		if(instance_id_data != noone)
-			show_debug_message(variable_instance_get(instance_id_data, "npc_id"));
+			show_debug_message(variable_instance_get(instance_id_data, "npc_id"));	
+			var sentence_num = variable_instance_get(instance_id_data, "sentence_num");
+			with(instance_create_depth(0, 0, -9999, obj_textbox)){
+				for(var i = 1; i <= sentence_num; i++){
+					var text = variable_instance_get(instance_id_data, "talk_sentence"+string(i));
+					register_text(text);
+				}
+			}
 	}
 }
