@@ -1,16 +1,28 @@
 
 textbox_width = 800;  //テキストボックスの横幅
-textbox_height = 300; //テキストボックスの縦幅
+textbox_height = 280; //テキストボックスの縦幅
 textbox_offset = 8;  //テキストボックスの周りのマージン
 
-textbox_line_separation = 48; //テキストの行間の間隔
-textbox_line_width = textbox_width - 2*textbox_offset; //行の横幅
+
+textbox_charaimg_width = 250;
+textbox_charaimg_height = 250;
+textbox_charaimg_offset_x = 50;
+textbox_charaimg_offset_y = 10;
+textbox_charaimg = spr_chara_ice1_dialog;
+textbox_buttonimg = spr_dialog_action_button;
+textbox_name_underscore = spr_dialog_name_underscore;
+textbox_chara_name = "";
 
 textbox_setup = false;
+
+textbox_line_separation = 48; //テキストの行間の間隔
+textbox_line_width = textbox_width - 2*textbox_offset - textbox_charaimg_width ; //行の横幅
 
 textbox_img = 0;
 textbox_img_speed = 6/60;
 textbox_spr = spr_dialog_bg;
+textbox_x = 0;
+textbox_y = 0;
 
 page = 0;
 page_num = 0;

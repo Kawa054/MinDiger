@@ -5,17 +5,17 @@ function update_player_sprite(argument0, argument1){
 	//スプライトの更新処理を行う
 	mask_index = sprite[DOWN];
 	if(y_direction == 0){
-		if x_direction > 0 { face = RIGHT };
-		if x_direction < 0 { face = LEFT };
+		if x_direction > 0 { obj_player.face = RIGHT };
+		if x_direction < 0 { obj_player.face = LEFT };
 	}
 
-	if x_direction > 0 && face == LEFT { face = RIGHT };
-	if x_direction < 0 && face == RIGHT { face = LEFT };
+	if x_direction > 0 && obj_player.face == LEFT { obj_player.face = RIGHT };
+	if x_direction < 0 && obj_player.face == RIGHT { obj_player.face = LEFT };
 	if x_direction == 0 {
-		if y_direction > 0 { face = DOWN };
-		if y_direction < 0 { face = UP };
+		if y_direction > 0 { obj_player.face = DOWN };
+		if y_direction < 0 { obj_player.face = UP };
 	}
-	sprite_index = sprite[face];
+	sprite_index = sprite[obj_player.face];
 
 	// 移動していない場合は動きを止める
 	// アニメーションの1フレームの画像に固定
