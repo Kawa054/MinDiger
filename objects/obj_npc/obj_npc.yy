@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "chara_ice1",
-    "path": "sprites/chara_ice1/chara_ice1.yy",
+    "name": "spr_chara_ice1",
+    "path": "sprites/spr_chara_ice1/spr_chara_ice1.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   "properties": [
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"npc_id","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sentence_num","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":2,"value":"\"chara name\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"name","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":2,"value":"\"test1\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"talk_sentence1","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":2,"value":"\"test2\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"talk_sentence2","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":2,"value":"\"test3\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"talk_sentence3","tags":[],"resourceType":"GMObjectProperty",},

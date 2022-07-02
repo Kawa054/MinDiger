@@ -18,8 +18,9 @@ function action(argument0, argument1){
 			var sentence_num = variable_instance_get(instance_id_data, "sentence_num");
 			var iid = instance_create_depth(instance_id_data.x, instance_id_data.y, -9999, obj_textbox);
 			with(iid){
-				iid.textbox_x = iid.x + 128;
+				iid.textbox_x = iid.x + 88;
 				iid.textbox_y = iid.y - iid.textbox_height + 30;
+				iid.textbox_chara_name = variable_instance_get(instance_id_data, "name");
 				for(var i = 1; i <= sentence_num; i++){
 					var text = variable_instance_get(instance_id_data, "talk_sentence"+string(i));
 					register_text(text);

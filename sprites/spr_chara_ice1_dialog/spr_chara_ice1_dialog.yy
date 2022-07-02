@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 23,
-  "bbox_right": 116,
-  "bbox_top": 13,
-  "bbox_bottom": 164,
+  "bbox_right": 223,
+  "bbox_top": 27,
+  "bbox_bottom": 249,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
-  "height": 177,
+  "width": 279,
+  "height": 250,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5a889eb2-a2c4-4e27-b500-cd74da17540a","path":"sprites/chara_ice1/chara_ice1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5a889eb2-a2c4-4e27-b500-cd74da17540a","path":"sprites/chara_ice1/chara_ice1.yy",},"LayerId":{"name":"04015ba4-cdfe-4d2f-806b-913ac5e995e9","path":"sprites/chara_ice1/chara_ice1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"chara_ice1","path":"sprites/chara_ice1/chara_ice1.yy",},"resourceVersion":"1.0","name":"5a889eb2-a2c4-4e27-b500-cd74da17540a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f10ee6c0-d95d-4ab1-8185-87f73de53dbd","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f10ee6c0-d95d-4ab1-8185-87f73de53dbd","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"LayerId":{"name":"b30ad1e4-fe4a-41f6-bfc7-bd5e76dc27ab","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_chara_ice1_dialog","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"resourceVersion":"1.0","name":"f10ee6c0-d95d-4ab1-8185-87f73de53dbd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"chara_ice1","path":"sprites/chara_ice1/chara_ice1.yy",},
+    "spriteId": {"name":"spr_chara_ice1_dialog","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0714ab62-71f5-47ce-8823-0bb493485ce5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a889eb2-a2c4-4e27-b500-cd74da17540a","path":"sprites/chara_ice1/chara_ice1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d00db654-89a7-4a35-b268-03e2d732be8c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f10ee6c0-d95d-4ab1-8185-87f73de53dbd","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"chara_ice1","path":"sprites/chara_ice1/chara_ice1.yy",},
+    "parent": {"name":"spr_chara_ice1_dialog","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},
     "resourceVersion": "1.4",
-    "name": "chara_ice1",
+    "name": "spr_chara_ice1_dialog",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"04015ba4-cdfe-4d2f-806b-913ac5e995e9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b30ad1e4-fe4a-41f6-bfc7-bd5e76dc27ab","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/NPC.yy",
   },
   "resourceVersion": "1.0",
-  "name": "chara_ice1",
+  "name": "spr_chara_ice1_dialog",
   "tags": [],
   "resourceType": "GMSprite",
 }
