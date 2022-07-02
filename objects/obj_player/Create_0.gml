@@ -4,8 +4,8 @@ yspd = 0;
 move_spd = 10;
 
 //会話などのアクション有効範囲
-action_width = 10;
-action_height = 10;
+action_width = 40;
+action_height = 40;
 
 //衝突時にめり込みを防ぐオブジェクト一覧
 collide_objects = [obj_wall, obj_npc];

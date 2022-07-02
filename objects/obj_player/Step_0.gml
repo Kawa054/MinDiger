@@ -14,4 +14,4 @@ update_player_sprite(x_direction, y_direction);
 update_player_position(x_direction, y_direction);
 
 //アクションの処理
-action(action_key, x_direction, y_direction);
+action(action_key, face);

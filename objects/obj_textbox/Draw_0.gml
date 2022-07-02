@@ -1,6 +1,3 @@
-textbox_x = display_get_width() / 2;
-textbox_y = display_get_height() - 50;
-
 if(!textbox_setup){
 	textbox_setup = true;
 	draw_set_font(font_main);

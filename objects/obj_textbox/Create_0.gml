@@ -11,6 +11,8 @@ textbox_setup = false;
 textbox_img = 0;
 textbox_img_speed = 6/60;
 textbox_spr = spr_dialog_bg;
+textbox_x = display_get_width() / 2;
+textbox_y = display_get_height() - 50;
 
 page = 0;
 page_num = 0;
