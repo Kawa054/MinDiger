@@ -4,9 +4,13 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform float noise_color_r;
-uniform float noise_color_g;
-uniform float noise_color_b;
+uniform float GROUND_COLOR_R;
+uniform float GROUND_COLOR_G;
+uniform float GROUND_COLOR_B;
+
+uniform float NOISE_COLOR_R;
+uniform float NOISE_COLOR_G;
+uniform float NOISE_COLOR_B;
 
 //Typical pseudo-random hash (white noise).
 float hash(vec2 p)
@@ -50,8 +54,12 @@ void main()
 {
     //gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 	
-	//rm_game_managerで使用
-	
-	float noise = fractal_noise(v_vTexcoord*30.0, 5, 0.5);
-	gl_FragColor = vec4(noise_color_r*noise, noise_color_g*noise, noise_color_b*noise, 0.32);
+	//ベースのピクセルデータの取得
+	gl_FragColor = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
+	if(gl_FragColor.r*255.0 >= GROUND_COLOR_R - 9.0 && gl_FragColor.r*255.0 <= GROUND_COLOR_R + 9.0 && 
+		gl_FragColor.g*255.0 >= GROUND_COLOR_G - 9.0 && gl_FragColor.g*255.0 <= GROUND_COLOR_G + 9.0 && 
+		gl_FragColor.b*255.0 >= GROUND_COLOR_B - 9.0 && gl_FragColor.b*255.0 <= GROUND_COLOR_B + 9.0){
+		float noise = fractal_noise(v_vTexcoord*40.0, 5, 0.5);
+		gl_FragColor = vec4(NOISE_COLOR_R*noise, NOISE_COLOR_G*noise, NOISE_COLOR_B*noise, 0.6);
+	}
 }
