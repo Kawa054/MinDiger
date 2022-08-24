@@ -1,0 +1,27 @@
+//草の地面の色
+#macro GROUND_GRASS_COLOR_R 176
+#macro GROUND_GRASS_COLOR_G 210
+#macro GROUND_GRASS_COLOR_B 133
+
+//模様の色(地面の一つ上)
+#macro GRASS_UPPER1_COLOR_R 127
+#macro GRASS_UPPER1_COLOR_G 255
+#macro GRASS_UPPER1_COLOR_B 127
+
+//模様の色(地面の二つ上)
+#macro GRASS_UPPER2_COLOR_R 46
+#macro GRASS_UPPER2_COLOR_G 139
+#macro GRASS_UPPER2_COLOR_B 87
+
+
+//-------------会話ボックスの色設定--------------//
+
+//会話ボックスの会話文の色
+#macro DIALOG_TEXT_COLOR_R 255
+#macro DIALOG_TEXT_COLOR_G 160
+#macro DIALOG_TEXT_COLOR_B 122
+
+//会話ボックスのキャラクターの名前の色
+#macro DIALOG_CHARA_NAME_COLOR_R 30
+#macro DIALOG_CHARA_NAME_COLOR_G 144
+#macro DIALOG_CHARA_NAME_COLOR_B 255

@@ -19,6 +19,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -28,7 +29,7 @@
     "path": "folders/Objects/Manager/rm_manager.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_game_manager",
+  "name": "rm_shdtest_manager",
   "tags": [],
   "resourceType": "GMObject",
 }
