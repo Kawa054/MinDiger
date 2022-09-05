@@ -4,8 +4,7 @@
 
 //------------- スタート画面関係 --------------//
 
-#macro START_BUTTON_WIDTH 600   //スタートボタンの横幅
-#macro START_BUTTON_HEIGHT 200  //スタートボタンの縦幅
+#macro START_BUTTON_Y 800   //スタートボタンのY座標
 
 //rm_startのcolor_effectおよびblur_effectレイヤーの設定
 #macro START_BACKGROUND_EFFECT_TIME 0.15 //スタートボタンを押した後の背景エフェクトまでの時間(秒)

@@ -3,18 +3,9 @@ switch(room_stat){
 	case ROOM_START_STAT_PREPARE:
 		//背景画面とボタンの描画
 		draw_sprite_stretched(spr_title_background, 0, 0, 0, window_get_width(), window_get_height());
-		create_simple_button(window_get_width()/2, 700, START_BUTTON_WIDTH, START_BUTTON_HEIGHT, "start", on_click_start);
+		create_start_button(window_get_width()/2 - sprite_get_width(icon_start_button)/2, START_BUTTON_Y, on_click_start);
 	break;
 	
-	case ROOM_START_STAT_SELECT:
-		if(!is_menu_opening){
-			is_menu_opening = true;
-			create_simple_button(select_button_x, select_button_y + 0*button_sep_y, button_width, button_height, "play",	on_click_play);
-			create_simple_button(select_button_x, select_button_y + 1*button_sep_y, button_width, button_height, "settings",on_click_settings);
-			create_simple_button(select_button_x, select_button_y + 2*button_sep_y, button_width, button_height, "exit",	on_click_exit);
-		}
-	break;
-
 	//データ選択画面
 	case ROOM_START_STAT_DATAS:
 		room_timer++;
@@ -62,6 +53,9 @@ switch(room_stat){
 			}
 		}
 	break;
+	
+	case ROOM_START_STAT_LOADING:
+		
 	
 	default:
 	break;

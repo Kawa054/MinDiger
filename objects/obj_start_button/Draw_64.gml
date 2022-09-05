@@ -1,0 +1,1 @@
+draw_sprite(icon_start_button, 0, x, y);

@@ -1,6 +1,7 @@
 #macro ROOM_START_STAT_PREPARE 1 //press to startの状態
 #macro ROOM_START_STAT_SELECT 2  //press to startを押した後の状態
 #macro ROOM_START_STAT_DATAS 3 //セーブデータの選択画面
+#macro ROOM_START_STAT_LOADING 4 //ロード画面
 
 room_stat = ROOM_START_STAT_PREPARE;
 room_timer = 0.0
