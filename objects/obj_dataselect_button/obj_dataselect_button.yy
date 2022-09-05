@@ -30,7 +30,7 @@
     "path": "folders/Objects/UI/Button/rm_start.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_datasend_button",
+  "name": "obj_dataselect_button",
   "tags": [],
   "resourceType": "GMObject",
 }
