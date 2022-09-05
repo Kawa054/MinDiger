@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "rm_start",
+    "path": "folders/Objects/UI/Button/onClick/rm_start.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script1",
+  "name": "on_click_start",
   "tags": [],
   "resourceType": "GMScript",
 }
