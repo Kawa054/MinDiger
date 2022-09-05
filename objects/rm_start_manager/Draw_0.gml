@@ -39,9 +39,9 @@ switch(room_stat){
 				var select_data_x = display_get_gui_width() / 2 - button_width/2;
 				var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
 				if(is_exist_save_data == "0"){
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, create_savedata);
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", create_savedata);
 				}else{
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, load_savedata);	
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", load_savedata);	
 				}
 			}
 		}else{

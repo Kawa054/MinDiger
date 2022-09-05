@@ -25,6 +25,18 @@ if(type == 0){
 	draw_line_width(x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+DATA_SELECT_CHARA_IMAGE_MARGIN/2, x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, DATA_SELECT_BUTTON_FRAMELINE_WIDTH);
 	draw_line_width(x + DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, DATA_SELECT_BUTTON_FRAMELINE_WIDTH);
 	
+	//文字の描画
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_text(x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width, y+DATA_SELECT_CHARA_IMAGE_MARGIN, player_name);
+	draw_text(x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width, y+DATA_SELECT_CHARA_IMAGE_MARGIN+40, player_playtime);
+	
+	
+	//ストーリー進捗アイコンの描画
+	draw_sprite(icon_data_select_bottom1, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+0*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
+	draw_sprite(icon_data_select_bottom2, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+1*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
+	draw_sprite(icon_data_select_bottom3, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+2*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
+	draw_sprite(icon_data_select_bottom4, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+3*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
 
 //データ未生成時の場合
 }else if(type == 1){
