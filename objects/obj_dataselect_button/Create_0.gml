@@ -10,3 +10,4 @@ player_playtime = "AA";
 hover = 0;
 type = 0;
 ascript = -1;
+arguments = [];

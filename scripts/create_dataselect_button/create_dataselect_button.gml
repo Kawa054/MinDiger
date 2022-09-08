@@ -6,8 +6,8 @@ function create_dataselect_button(){
 	var _height = argument[4];
 	var _player_name = argument[5];
 	var _player_playtime = argument[6];
-	var _script = argument[7];
-	
+	var _arguments = argument[7];
+	var _script = argument[8];
 	
 	var _button = instance_create_layer(_x, _y, "Instances", obj_dataselect_button);
 	with(_button){
@@ -16,6 +16,7 @@ function create_dataselect_button(){
 		height = _height;
 		player_name = _player_name;
 		player_playtime = _player_playtime;
+		arguments = _arguments;
 		ascript = _script;
 	}
 	

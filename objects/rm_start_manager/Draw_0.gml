@@ -2,7 +2,6 @@ switch(room_stat){
 	//スタート直後の画面
 	case ROOM_START_STAT_PREPARE:
 		//背景画面とボタンの描画
-		draw_sprite_stretched(spr_title_background, 0, 0, 0, window_get_width(), window_get_height());
 		create_start_button(window_get_width()/2 - sprite_get_width(icon_start_button)/2, START_BUTTON_Y, on_click_start);
 	break;
 	
@@ -30,9 +29,9 @@ switch(room_stat){
 				var select_data_x = display_get_gui_width() / 2 - button_width/2;
 				var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
 				if(is_exist_save_data == "0"){
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", create_savedata);
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", i, create_savedata);
 				}else{
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", load_savedata);	
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", i, load_savedata);	
 				}
 			}
 		}else{
@@ -46,16 +45,39 @@ switch(room_stat){
 				var select_data_x = display_get_gui_width() / 2 - button_width/2;
 				var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
 				if(is_exist_save_data == "0"){
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, create_savedata);
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, i, create_savedata);
 				}else{
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, load_savedata);	
+					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, i, load_savedata);	
 				}
 			}
 		}
 	break;
 	
 	case ROOM_START_STAT_LOADING:
-		
+		room_timer++;
+		if(room_timer <= LOADING_START_TIME*60){
+			draw_set_colour(c_black);
+			draw_set_alpha(room_timer / (LOADING_START_TIME*60));
+			draw_rectangle(0, 0, window_get_width(), window_get_height(), 0);
+			draw_set_alpha(1);
+			if(room_timer == LOADING_START_TIME*60){
+				var lay_id = layer_get_id("Background");
+				var back_id = layer_background_get_id(lay_id);
+				layer_background_sprite(back_id, spr_background_black);
+			}
+		}else if(room_timer > LOADING_START_TIME*60 && room_timer <= (LOADING_START_TIME + LOADING_MIN_TIME)*60){
+			var lay_id = layer_get_id("Background");
+			var back_id = layer_background_get_id(lay_id);
+			layer_background_sprite(back_id, spr_loading);
+		}else if(room_timer > (LOADING_START_TIME + LOADING_MIN_TIME)*60 && room_timer <= (2*LOADING_START_TIME + LOADING_MIN_TIME)*60){
+			draw_set_colour(c_black);
+			draw_set_alpha( (room_timer - (LOADING_START_TIME + LOADING_MIN_TIME)*60) / (LOADING_START_TIME*60) );
+			draw_rectangle(0, 0, window_get_width(), window_get_height(), 0);
+			draw_set_alpha(1);
+		}else{
+			room_goto(rm_game);
+		}
+	break;
 	
 	default:
 	break;

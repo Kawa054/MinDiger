@@ -34,6 +34,7 @@
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":1,},
     {"id":{"name":"load_savedata","path":"scripts/load_savedata/load_savedata.yy",},"order":2,},
     {"id":{"name":"spr_chara_ice1_dialog","path":"sprites/spr_chara_ice1_dialog/spr_chara_ice1_dialog.yy",},"order":2,},
+    {"id":{"name":"spr_background_black","path":"sprites/spr_background_black/spr_background_black.yy",},"order":2,},
     {"id":{"name":"obj_option_button","path":"objects/obj_option_button/obj_option_button.yy",},"order":2,},
     {"id":{"name":"icon_backbutton","path":"sprites/icon_backbutton/icon_backbutton.yy",},"order":1,},
     {"id":{"name":"shd_blur_vertical","path":"shaders/shd_blur_vertical/shd_blur_vertical.yy",},"order":1,},

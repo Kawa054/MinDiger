@@ -4,3 +4,4 @@ width = image_width;
 height = image_height;
 hover = 0;
 ascript = -1;
+arguments = [];

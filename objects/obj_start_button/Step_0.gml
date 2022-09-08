@@ -5,5 +5,5 @@ hover = lerp(hover, _hover, 0.1);
 y = lerp(y, ystart - _hover * 4, 0.1);
 
 if(_click && ascript >= 0){
-	script_execute(ascript);
+	script_execute(ascript, arguments);
 }
