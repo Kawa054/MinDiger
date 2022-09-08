@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Button",
-    "path": "folders/Objects/UI/Button.yy",
+    "name": "rm_start",
+    "path": "folders/Objects/UI/Button/rm_start.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_simple_button",

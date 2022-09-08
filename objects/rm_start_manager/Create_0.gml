@@ -1,8 +1,10 @@
 #macro ROOM_START_STAT_PREPARE 1 //press to startの状態
 #macro ROOM_START_STAT_SELECT 2  //press to startを押した後の状態
 #macro ROOM_START_STAT_DATAS 3 //セーブデータの選択画面
+#macro ROOM_START_STAT_LOADING 4 //ロード画面
 
 room_stat = ROOM_START_STAT_PREPARE;
+room_timer = 0.0
 draw_set_font(font_main);
 draw_set_color(c_white);
 draw_set_valign(fa_top);
@@ -16,6 +18,7 @@ if window_get_fullscreen(){
 }else{
     window_set_fullscreen(true);
 }
+
 
 //セーブデータのフォルダが存在しない場合, セーブデータ関連のファイルを作成する.
 if !directory_exists("SaveData")
