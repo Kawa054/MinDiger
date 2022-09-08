@@ -38,6 +38,7 @@
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR1_R 255 //通常時のボタンの背景色(R)
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR1_G 214 //通常時のボタンの背景色(G)
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR1_B 170 //通常時のボタンの背景色(B)
+
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR2_R 255 //データ未生成時の背景色(R)
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR2_G 234 //データ未生成時の背景色(G)
 #macro DATA_SELECT_BUTTON_BACKGROUNDCOLOR2_B 208 //データ未生成時の背景色(B)
@@ -46,6 +47,7 @@
 #macro DATA_SELECT_BUTTON_FRAMELINE1_COLOR_R 239 //通常時のボタンの枠線の色(R)
 #macro DATA_SELECT_BUTTON_FRAMELINE1_COLOR_G 198 //通常時のボタンの枠線の色(G)
 #macro DATA_SELECT_BUTTON_FRAMELINE1_COLOR_B 156 //通常時のボタンの枠線の色(B)
+
 #macro DATA_SELECT_BUTTON_FRAMELINE2_COLOR_R 247 //データ未生成時の枠線の色(R)
 #macro DATA_SELECT_BUTTON_FRAMELINE2_COLOR_G 226 //データ未生成時の枠線の色(G)
 #macro DATA_SELECT_BUTTON_FRAMELINE2_COLOR_B 199 //データ未生成時の枠線の色(B)
@@ -55,6 +57,24 @@
 #macro LOADING_START_TIME 0.3 //ロード画面までの暗転時間
 #macro LOADING_MIN_TIME 2.0 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
 
+//------------- 設定画面の設定 -----------------//
+#macro SETTINGS_MENU_WIDTH 1200 //設定ウィンドウの横幅
+#macro SETTINGS_MENU_HEIGHT 700 //設定ウィンドウの縦幅
+
+#macro SETTINGS_FONT_COLOR_R 83 //設定ウィンドウの文字色(R)
+#macro SETTINGS_FONT_COLOR_G 74 //設定ウィンドウの文字色(G)
+#macro SETTINGS_FONT_COLOR_B 64 //設定ウィンドウの文字色(B)
+
+#macro SETTINGS_MENU_UPPER_HEIGHT 80 //設定ウィンドウの項目(設定群の選択部分)の縦幅
+#macro SETTINGS_MENU_UPPER_MARGIN 20 //設定群の間隔
+
+#macro SETTINGS_BACKGROUND_COLOR_R 255 //設定ウィンドウの背景色(R)
+#macro SETTINGS_BACKGROUND_COLOR_G 234 //設定ウィンドウの背景色(G)
+#macro SETTINGS_BACKGROUND_COLOR_B 208 //設定ウィンドウの背景色(B)
+
+#macro SETTINGS_NON_SELECTED_COLOR_R 232 //未選択の設定群の背景色(R)
+#macro SETTINGS_NON_SELECTED_COLOR_G 199 //未選択の設定群の背景色(G)
+#macro SETTINGS_NON_SELECTED_COLOR_B 160 //未選択の設定群の背景色(B)
 
 //------------- 会話ボックスの色設定 --------------//
 

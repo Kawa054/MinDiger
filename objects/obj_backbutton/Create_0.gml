@@ -8,6 +8,14 @@ state = 0;
 //クリックされたときの処理
 activate_button = function() 
 {
+	if(rm_start_manager.is_setting_opening){
+		instance_deactivate_object(obj_setting_menu);
+		instance_deactivate_object(id);
+		instance_activate_object(obj_settings_button);
+		rm_start_manager.is_setting_opening = false;
+		exit;
+	}
+	
 	switch(rm_start_manager.room_stat){
 		case ROOM_START_STAT_DATAS:
 			rm_start_manager.room_stat = ROOM_START_STAT_PREPARE;

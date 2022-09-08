@@ -2,7 +2,10 @@ switch(room_stat){
 	
 	//スタート直後の画面
 	case ROOM_START_STAT_PREPARE:
-
+		if(!is_setting_opening){
+			instance_activate_object(obj_start_button);
+			instance_activate_object(obj_settings_button);
+		}
 	break;
 	
 	//データ選択画面

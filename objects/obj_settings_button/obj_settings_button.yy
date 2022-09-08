@@ -34,7 +34,7 @@
     "path": "folders/Objects/UI/Button/common.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_settings_menu",
+  "name": "obj_settings_button",
   "tags": [],
   "resourceType": "GMObject",
 }

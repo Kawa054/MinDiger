@@ -1,1 +1,0 @@
-draw_sprite_stretched(icon_option, 0, x, y, width, height)
