@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "icon_start_button",
-    "path": "sprites/icon_start_button/icon_start_button.yy",
+    "name": "icon_settings",
+    "path": "sprites/icon_settings/icon_settings.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "rm_start",
-    "path": "folders/Objects/UI/Button/rm_start.yy",
+    "name": "common",
+    "path": "folders/Objects/UI/Button/common.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_start_button",
+  "name": "obj_settings_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

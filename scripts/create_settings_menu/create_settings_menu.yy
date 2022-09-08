@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "rm_start",
-    "path": "folders/Objects/UI/Button/onClick/rm_start.yy",
+    "name": "Settings",
+    "path": "folders/Objects/UI/Menu/Settings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "on_click_play",
+  "name": "create_settings_menu",
   "tags": [],
   "resourceType": "GMScript",
 }

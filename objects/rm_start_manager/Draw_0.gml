@@ -1,8 +1,8 @@
 switch(room_stat){
+	
 	//スタート直後の画面
 	case ROOM_START_STAT_PREPARE:
-		//背景画面とボタンの描画
-		create_start_button(window_get_width()/2 - sprite_get_width(icon_start_button)/2, START_BUTTON_Y, on_click_start);
+
 	break;
 	
 	//データ選択画面

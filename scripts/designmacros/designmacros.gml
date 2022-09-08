@@ -4,7 +4,11 @@
 
 //------------- スタート画面関係 --------------//
 
-#macro START_BUTTON_Y 800   //スタートボタンのY座標
+#macro START_BUTTON_Y 760   //スタートボタンのY座標(X座標は自動で画面中心になるS)
+#macro SETTING_BUTTON_X 1600 //設定ボタンのX座標
+#macro SETTING_BUTTON_Y 100  //設定ボタンのY座標
+#macro BACK_BUTTON_X 100 //戻るボタンのX座標
+#macro BACK_BUTTON_Y 100 //戻るボタンのY座標
 
 //rm_startのcolor_effectおよびblur_effectレイヤーの設定
 #macro START_BACKGROUND_EFFECT_TIME 0.15 //スタートボタンを押した後の背景エフェクトまでの時間(秒)

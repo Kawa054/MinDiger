@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 63,
-  "bbox_top": 1,
-  "bbox_bottom": 62,
+  "bbox_right": 132,
+  "bbox_top": 0,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 133,
+  "height": 97,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3a97588d-8982-4318-ae71-d8ae53da38d1","path":"sprites/icon_backbutton/icon_backbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a97588d-8982-4318-ae71-d8ae53da38d1","path":"sprites/icon_backbutton/icon_backbutton.yy",},"LayerId":{"name":"0203c3a2-9dec-4985-8572-9a8e187ea0f0","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_backbutton","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","name":"3a97588d-8982-4318-ae71-d8ae53da38d1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3196dcf1-1d2f-46a3-9130-fb1c679751db","path":"sprites/icon_backbutton/icon_backbutton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3196dcf1-1d2f-46a3-9130-fb1c679751db","path":"sprites/icon_backbutton/icon_backbutton.yy",},"LayerId":{"name":"14a9c59b-4ca0-42db-bbcb-fd3f08270f7b","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_backbutton","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","name":"3196dcf1-1d2f-46a3-9130-fb1c679751db","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_backbutton","path":"sprites/icon_backbutton/icon_backbutton.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8f28dcd5-466d-44b1-83ac-1c72df78a3c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a97588d-8982-4318-ae71-d8ae53da38d1","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"89b6b889-8341-4dc2-be7a-405b03d2320f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3196dcf1-1d2f-46a3-9130-fb1c679751db","path":"sprites/icon_backbutton/icon_backbutton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0203c3a2-9dec-4985-8572-9a8e187ea0f0","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"14a9c59b-4ca0-42db-bbcb-fd3f08270f7b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Icon",
-    "path": "folders/Sprites/UI/Icon.yy",
+    "name": "Button",
+    "path": "folders/Sprites/UI/Button.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_backbutton",

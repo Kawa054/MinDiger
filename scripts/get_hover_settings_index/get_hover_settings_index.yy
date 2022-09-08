@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "rm_start",
-    "path": "folders/Objects/UI/Button/onClick/rm_start.yy",
+    "name": "Settings",
+    "path": "folders/Objects/UI/Menu/Settings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "on_click_exit",
+  "name": "get_hover_settings_index",
   "tags": [],
   "resourceType": "GMScript",
 }
