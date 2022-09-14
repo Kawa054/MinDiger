@@ -3,6 +3,9 @@ y = BACK_BUTTON_Y;
 xstart = BACK_BUTTON_X;
 ystart = BACK_BUTTON_Y;
 
+width = sprite_get_width(icon_backbutton);
+height = sprite_get_height(icon_backbutton);
+
 state = 0;
 
 //クリックされたときの処理
@@ -18,8 +21,27 @@ activate_button = function()
 	
 	switch(rm_start_manager.room_stat){
 		case ROOM_START_STAT_DATAS:
+			var _fx_struct1 = layer_get_fx( "blur_effect");
+			var _fx_struct2 = layer_get_fx("color_effect");
+			fx_set_parameter(_fx_struct1, "g_LinearBlurVector", [0, 0]);
+			fx_set_parameter(_fx_struct2, "g_Intensity", 0);
+			
+			var button_width = DATA_SELECT_BUTTON_WIDTH*0.9;
+			var button_height = ((sprite_get_height(icon_data_select_chara) + 2*DATA_SELECT_CHARA_IMAGE_MARGIN))*0.9;
+			var select_data_x = display_get_gui_width() / 2 - button_width/2;
+			var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
+			for(var i = 0; i < SAVEDATA_NUM; i++){			
+				rm_start_manager.dataselectbuttons[i].x = select_data_x;
+				rm_start_manager.dataselectbuttons[i].xstart = select_data_x;
+				rm_start_manager.dataselectbuttons[i].y = select_data_y + (i)*(DATA_SELECT_BUTTON_SEP_Y + button_height);
+				rm_start_manager.dataselectbuttons[i].ystart = select_data_y + (i)*(DATA_SELECT_BUTTON_SEP_Y + button_height);
+				rm_start_manager.dataselectbuttons[i].width = button_width;
+				rm_start_manager.dataselectbuttons[i].height = button_height;
+				instance_deactivate_object(rm_start_manager.dataselectbuttons[i]);
+			}
 			rm_start_manager.room_stat = ROOM_START_STAT_PREPARE;
 			instance_activate_object(obj_start_button);
+			instance_deactivate_object(id);
 		break;
 	}
 }

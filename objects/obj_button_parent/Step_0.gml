@@ -1,4 +1,6 @@
-hovering = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), id);
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
+hovering = (mx >= x) && (mx <= x + width) && (my >= y) && (my <= y + height) ;
 
 if (hovering){
 	hovering_button();

@@ -5,8 +5,8 @@
 //------------- スタート画面関係 --------------//
 
 #macro START_BUTTON_Y 760   //スタートボタンのY座標(X座標は自動で画面中心になるS)
-#macro SETTING_BUTTON_X 1600 //設定ボタンのX座標
-#macro SETTING_BUTTON_Y 100  //設定ボタンのY座標
+#macro SETTING_BUTTON_X 1700 //設定ボタンのX座標
+#macro SETTING_BUTTON_Y 70  //設定ボタンのY座標
 #macro BACK_BUTTON_X 100 //戻るボタンのX座標
 #macro BACK_BUTTON_Y 100 //戻るボタンのY座標
 
@@ -30,7 +30,7 @@
 
 #macro DATA_SELECT_BUTTON_WIDTH 1200 //ボタンの横幅
 #macro DATA_SELECT_BUTTON_SEP_Y 20 //ボタンの縦間隔
-#macro DATA_SELECT_BUTTON_MARGE_AMOUNT 0.25 //ボタン選択中(ホバー状態)の色の強さ(0~1)
+#macro DATA_SELECT_BUTTON_MARGE_AMOUNT 0.32 //ボタン選択中(ホバー状態)の色の強さ(0~1)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_R 255 //ボタン選択中の合成色(R)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_G 255 //ボタン選択中の合成色(G)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_B 255 //ボタン選択中の合成色(B)
@@ -58,7 +58,7 @@
 #macro LOADING_MIN_TIME 2.0 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
 
 //------------- 設定画面の設定 -----------------//
-#macro SETTINGS_MENU_WIDTH 1200 //設定ウィンドウの横幅
+#macro SETTINGS_MENU_WIDTH 1400 //設定ウィンドウの横幅
 #macro SETTINGS_MENU_HEIGHT 700 //設定ウィンドウの縦幅
 
 #macro SETTINGS_FONT_COLOR_R 83 //設定ウィンドウの文字色(R)
