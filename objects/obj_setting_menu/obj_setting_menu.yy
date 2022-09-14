@@ -20,16 +20,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "rm_manager",
-    "path": "folders/Objects/Manager/rm_manager.yy",
+    "name": "Settings",
+    "path": "folders/Objects/UI/Menu/Settings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_start_manager",
+  "name": "obj_setting_menu",
   "tags": [],
   "resourceType": "GMObject",
 }

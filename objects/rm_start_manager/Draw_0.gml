@@ -1,12 +1,28 @@
 switch(room_stat){
 	//スタート直後の画面
 	case ROOM_START_STAT_PREPARE:
-		//背景画面とボタンの描画
-		create_start_button(window_get_width()/2 - sprite_get_width(icon_start_button)/2, START_BUTTON_Y, on_click_start);
+		var lay_id = layer_get_id("Background");
+		var back_id = layer_background_get_id(lay_id);
+		layer_background_sprite(back_id, spr_title_background);
+		if(!is_setting_opening){
+			instance_activate_object(obj_start_button);
+			instance_activate_object(obj_settings_button);
+		}
 	break;
 	
 	//データ選択画面
 	case ROOM_START_STAT_DATAS:
+		if(!is_setting_opening){
+			instance_activate_object(obj_backbutton);
+			for(var i = 0; i < SAVEDATA_NUM; i++){
+				instance_activate_object(dataselectbuttons[i]);
+			}
+		}
+		if(room_timer == 0){
+			var lay_id = layer_get_id("Background");
+			var back_id = layer_background_get_id(lay_id);
+			layer_background_sprite(back_id, spr_notitle_background);
+		}
 		room_timer++;
 		if(room_timer <= START_BACKGROUND_EFFECT_TIME*60){
 			//背景にブラー効果を加える
@@ -16,44 +32,38 @@ switch(room_stat){
 			fx_set_parameter(_fx_struct1, "g_LinearBlurVector", [START_BACKGROUND_BLUR_SIZE_X*blur_amount, START_BACKGROUND_BLUR_SIZE_Y*blur_amount]);
 			fx_set_parameter(_fx_struct2, "g_Intensity", START_BACKGROUND_COLOR_INTENSITY*blur_amount);
 			fx_set_parameter(_fx_struct2, "g_TintCol", [START_BACKGROUND_COLOR_R, START_BACKGROUND_COLOR_G, START_BACKGROUND_COLOR_B, START_BACKGROUND_COLOR_ALPHA]);
-		}else if(room_timer >= START_BACKGROUND_EFFECT_TIME*60 && room_timer <= START_BACKGROUND_EFFECT_TIME*60 + 10.0){
-			instance_destroy(obj_dataselect_button);
-			for(var i = 1; i <= SAVEDATA_NUM; i++){
-				ini_open("SaveData/data" + string(i) + "/savedata.ini");
-				var is_exist_save_data = ini_read_string("savedata_info", "Exist SaveData", "-1");
-				ini_close();
-				
+		}else if(room_timer >= START_BACKGROUND_EFFECT_TIME*60 && room_timer < START_BACKGROUND_EFFECT_TIME*60 + 10.0){
+			//ボタンの方のGUIに書く
+			for(var i = 1; i <= SAVEDATA_NUM; i++){		
 				var button_width = lerp(DATA_SELECT_BUTTON_WIDTH*0.9, DATA_SELECT_BUTTON_WIDTH, (room_timer-START_BACKGROUND_EFFECT_TIME*60)/10.0);
 				var tmp = sprite_get_height(icon_data_select_chara) + 2*DATA_SELECT_CHARA_IMAGE_MARGIN;
 				var button_height = lerp(tmp*0.9, tmp, (room_timer-START_BACKGROUND_EFFECT_TIME*60)/10.0);
 				var select_data_x = display_get_gui_width() / 2 - button_width/2;
 				var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
-				if(is_exist_save_data == "0"){
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", i, create_savedata);
-				}else{
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, "DATA" + string(i) + "　かわさん", "プレイ時間　00:00:00", i, load_savedata);	
-				}
+				dataselectbuttons[i-1].x = select_data_x;
+				dataselectbuttons[i-1].y = select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height);
+				dataselectbuttons[i-1].width = button_width;
+				dataselectbuttons[i-1].height = button_height;
 			}
 		}else{
-			for(var i = 1; i <= SAVEDATA_NUM; i++){
-				ini_open("SaveData/data" + string(i) + "/savedata.ini");
-				var is_exist_save_data = ini_read_string("savedata_info", "Exist SaveData", "-1");
-				ini_close();
-				
-				var button_width = DATA_SELECT_BUTTON_WIDTH
-				var button_height = (sprite_get_height(icon_data_select_chara) + 2*DATA_SELECT_CHARA_IMAGE_MARGIN);
-				var select_data_x = display_get_gui_width() / 2 - button_width/2;
-				var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
-				if(is_exist_save_data == "0"){
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 1, button_width, button_height, i, create_savedata);
-				}else{
-					create_dataselect_button(select_data_x, select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height), 0, button_width, button_height, i, load_savedata);	
+			if(room_timer == START_BACKGROUND_EFFECT_TIME*60 + 10.0){
+				for(var i = 1; i <= SAVEDATA_NUM; i++){
+					var button_width = DATA_SELECT_BUTTON_WIDTH;
+					var button_height = (sprite_get_height(icon_data_select_chara) + 2*DATA_SELECT_CHARA_IMAGE_MARGIN);
+					var select_data_x = display_get_gui_width() / 2 - button_width/2;
+					var select_data_y = (display_get_gui_height() - (3*DATA_SELECT_BUTTON_SEP_Y + 4*button_height))/2;
+					dataselectbuttons[i-1].x = select_data_x;
+					dataselectbuttons[i-1].y = select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height);
+					dataselectbuttons[i-1].ystart = select_data_y + (i-1)*(DATA_SELECT_BUTTON_SEP_Y + button_height);
+					dataselectbuttons[i-1].width = button_width;
+					dataselectbuttons[i-1].height = button_height;
 				}
 			}
 		}
 	break;
 	
 	case ROOM_START_STAT_LOADING:
+		instance_deactivate_layer(layer_get_id("GUI"));
 		room_timer++;
 		if(room_timer <= LOADING_START_TIME*60){
 			draw_set_colour(c_black);
