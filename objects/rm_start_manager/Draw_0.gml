@@ -3,8 +3,9 @@ switch(room_stat){
 	case ROOM_START_STAT_PREPARE:
 		var lay_id = layer_get_id("Background");
 		var back_id = layer_background_get_id(lay_id);
-		layer_background_sprite(back_id, spr_title_background);
+		layer_background_sprite(back_id, spr_notitle_background);
 		if(!is_setting_opening){
+			layer_background_sprite(back_id, spr_title_background);
 			instance_activate_object(obj_start_button);
 			instance_activate_object(obj_settings_button);
 		}
@@ -14,9 +15,6 @@ switch(room_stat){
 	case ROOM_START_STAT_DATAS:
 		if(!is_setting_opening){
 			instance_activate_object(obj_backbutton);
-			for(var i = 0; i < SAVEDATA_NUM; i++){
-				instance_activate_object(dataselectbuttons[i]);
-			}
 		}
 		if(room_timer == 0){
 			var lay_id = layer_get_id("Background");
@@ -32,6 +30,12 @@ switch(room_stat){
 			fx_set_parameter(_fx_struct1, "g_LinearBlurVector", [START_BACKGROUND_BLUR_SIZE_X*blur_amount, START_BACKGROUND_BLUR_SIZE_Y*blur_amount]);
 			fx_set_parameter(_fx_struct2, "g_Intensity", START_BACKGROUND_COLOR_INTENSITY*blur_amount);
 			fx_set_parameter(_fx_struct2, "g_TintCol", [START_BACKGROUND_COLOR_R, START_BACKGROUND_COLOR_G, START_BACKGROUND_COLOR_B, START_BACKGROUND_COLOR_ALPHA]);
+			
+			if(room_timer == START_BACKGROUND_EFFECT_TIME*60){
+				for(var i = 0; i < SAVEDATA_NUM; i++){
+					instance_activate_object(dataselectbuttons[i]);
+				}
+			}
 		}else if(room_timer >= START_BACKGROUND_EFFECT_TIME*60 && room_timer < START_BACKGROUND_EFFECT_TIME*60 + 10.0){
 			//ボタンの方のGUIに書く
 			for(var i = 1; i <= SAVEDATA_NUM; i++){		
@@ -85,7 +89,7 @@ switch(room_stat){
 			draw_rectangle(0, 0, window_get_width(), window_get_height(), 0);
 			draw_set_alpha(1);
 		}else{
-			room_goto(rm_game);
+			room_goto(rm_mode_select);
 		}
 	break;
 	
