@@ -55,7 +55,13 @@
 
 //------------- Loading画面の設定 -------------//
 #macro LOADING_START_TIME 0.3 //ロード画面までの暗転時間
-#macro LOADING_MIN_TIME 2.0 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
+#macro LOADING_MIN_TIME 1.5 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
+
+
+//------------- モード画面の設定 -------------//
+#macro MODE_SELECT_Y 200 //モード選択UIのY座標
+#macro MODE_SELECT_SEP_X 40 //モード選択UIの横間隔
+#macro MODE_SELECT_NAMEBAND_MARGIN_Y 0 //モードの名前の帯の縦方向マージン
 
 //------------- 設定画面の設定 -----------------//
 #macro SETTINGS_MENU_WIDTH 1400 //設定ウィンドウの横幅
