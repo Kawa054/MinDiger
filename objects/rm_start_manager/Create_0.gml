@@ -14,7 +14,7 @@ is_setting_opening = false;
 instance_deactivate_object(obj_backbutton);
 instance_deactivate_object(obj_setting_menu);
 
-
+blur_reset();
 
 //起動時に全画面表示にする
 if window_get_fullscreen(){

@@ -63,6 +63,13 @@ switch(room_stat){
 					dataselectbuttons[i-1].height = button_height;
 				}
 			}
+			
+			//settings用
+			if(!is_setting_opening){	
+				for(var i = 0; i < SAVEDATA_NUM; i++){
+					instance_activate_object(dataselectbuttons[i]);
+				}
+			}
 		}
 	break;
 	

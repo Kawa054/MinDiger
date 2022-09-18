@@ -3,10 +3,10 @@
   "isCompatibility": false,
   "parent": {
     "name": "common",
-    "path": "folders/Scripts/common.yy",
+    "path": "folders/Objects/UI/Button/function/common.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script14",
+  "name": "back_from_settings",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -59,7 +59,7 @@
 
 
 //------------- モード画面の設定 -------------//
-#macro MODE_SELECT_Y 100 //モード選択UIのY座標
+#macro MODE_SELECT_Y 200 //モード選択UIのY座標
 #macro MODE_SELECT_SEP_X 40 //モード選択UIの横間隔
 #macro MODE_SELECT_NAMEBAND_MARGIN_Y 0 //モードの名前の帯の縦方向マージン
 

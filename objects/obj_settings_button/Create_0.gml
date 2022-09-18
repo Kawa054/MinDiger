@@ -10,7 +10,14 @@ activate_button = function() {
 	instance_deactivate_layer("GUI");
 	instance_activate_object(obj_setting_menu);
 	instance_activate_object(obj_backbutton);
-	rm_start_manager.is_setting_opening = true;
+	if(room == rm_start){ 
+		rm_start_manager.is_setting_opening = true;
+		exit; 
+	}
+	if(room == rm_mode_select){ 
+		rm_modeselect_manager.is_setting_opening = true;
+		exit; 
+	}
 }
 
 //ホバーしていないときの処理

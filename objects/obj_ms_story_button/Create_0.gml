@@ -5,9 +5,7 @@ hover = 0;
 //クリックされたときの処理
 activate_button = function() 
 {
-	rm_start_manager.room_stat = ROOM_START_STAT_DATAS;
-	rm_start_manager.room_timer = 0;
-	instance_deactivate_object(id);
+	room_goto(rm_game);
 }
 
 //ホバーしているときの処理
