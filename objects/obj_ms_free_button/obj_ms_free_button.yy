@@ -29,6 +29,10 @@
   ],
   "properties": [],
   "overriddenProperties": [],
+  "parent": {
+    "name": "rm_modeselect",
+    "path": "folders/Objects/UI/Button/rm_modeselect.yy",
+  },
   "resourceVersion": "1.0",
   "name": "obj_ms_free_button",
   "tags": [],
