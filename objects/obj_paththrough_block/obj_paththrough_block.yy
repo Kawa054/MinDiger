@@ -1,17 +1,11 @@
 {
-  "spriteId": {
-    "name": "spr_rock3",
-    "path": "sprites/spr_rock3/spr_rock3.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,15 +18,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "rock",
-    "path": "folders/Objects/Block/rock.yy",
+    "name": "block",
+    "path": "folders/Objects/Block/block.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rock3",
+  "name": "obj_paththrough_block",
   "tags": [],
   "resourceType": "GMObject",
 }
