@@ -8,7 +8,7 @@ action_width = 40;
 action_height = 40;
 
 //衝突時にめり込みを防ぐオブジェクト一覧
-collide_objects = [obj_wall, obj_npc];
+collide_objects = [obj_wall, obj_npc, obj_block];
 
 //移動時スプライトの管理
 sprite[RIGHT] = spr_player_right;

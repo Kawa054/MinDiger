@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Block",
-    "path": "folders/Objects/Block.yy",
+    "name": "block",
+    "path": "folders/Objects/Block/block.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_action_box",

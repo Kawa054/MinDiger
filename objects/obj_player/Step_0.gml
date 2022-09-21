@@ -10,6 +10,7 @@ var x_direction = right_key - left_key;
 var y_direction = down_key - up_key;
 
 // プレイヤーの情報を更新する
+depth = -bbox_top;
 update_player_sprite(x_direction, y_direction);
 update_player_position(x_direction, y_direction);
 

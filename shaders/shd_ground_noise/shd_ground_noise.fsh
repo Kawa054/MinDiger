@@ -8,9 +8,14 @@ uniform float GROUND_COLOR_R;
 uniform float GROUND_COLOR_G;
 uniform float GROUND_COLOR_B;
 
-uniform float NOISE_COLOR_R;
-uniform float NOISE_COLOR_G;
-uniform float NOISE_COLOR_B;
+uniform float NOISE_COLOR_R1;
+uniform float NOISE_COLOR_G1;
+uniform float NOISE_COLOR_B1;
+uniform float NOISE_COLOR_R2;
+uniform float NOISE_COLOR_G2;
+uniform float NOISE_COLOR_B2;
+
+uniform vec2 ppos;
 
 //Typical pseudo-random hash (white noise).
 float hash(vec2 p)
@@ -55,11 +60,19 @@ void main()
     //gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 	
 	//ベースのピクセルデータの取得
+	vec2 vect = vec2(v_vTexcoord.x + ppos.x/1920.0, v_vTexcoord.y + ppos.y/1080.0);
+	vec2 v = vec2(v_vTexcoord.x-200.0, v_vTexcoord.y-200.0);
 	gl_FragColor = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
-	if(gl_FragColor.r*255.0 >= GROUND_COLOR_R - 9.0 && gl_FragColor.r*255.0 <= GROUND_COLOR_R + 9.0 && 
-		gl_FragColor.g*255.0 >= GROUND_COLOR_G - 9.0 && gl_FragColor.g*255.0 <= GROUND_COLOR_G + 9.0 && 
-		gl_FragColor.b*255.0 >= GROUND_COLOR_B - 9.0 && gl_FragColor.b*255.0 <= GROUND_COLOR_B + 9.0){
-		float noise = fractal_noise(v_vTexcoord*40.0, 5, 0.5);
-		gl_FragColor = vec4(NOISE_COLOR_R*noise, NOISE_COLOR_G*noise, NOISE_COLOR_B*noise, 0.6);
+	if(gl_FragColor.r*255.0 >= GROUND_COLOR_R - 0.0 && gl_FragColor.r*255.0 <= GROUND_COLOR_R + 0.0 && 
+		gl_FragColor.g*255.0 >= GROUND_COLOR_G - 0.0 && gl_FragColor.g*255.0 <= GROUND_COLOR_G + 0.0 && 
+		gl_FragColor.b*255.0 >= GROUND_COLOR_B - 0.0 && gl_FragColor.b*255.0 <= GROUND_COLOR_B + 0.0){
+		float noise1 = fractal_noise(vect*15.0, 5, 0.5);
+		float noise2 = fractal_noise((vect - vec2(200, 200))*15.0, 5, 0.5);
+		if(noise1 <= 0.50){
+			gl_FragColor = vec4(NOISE_COLOR_R1, NOISE_COLOR_G1, NOISE_COLOR_B1, 1.0);
+		}
+		if(noise2 <= 0.32){
+			gl_FragColor = vec4(NOISE_COLOR_R2, NOISE_COLOR_G2, NOISE_COLOR_B2, 1.0);
+		}
 	}
 }
