@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_tree3",
+    "path": "sprites/spr_tree3/spr_tree3.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "block",
-    "path": "folders/Objects/Block/block.yy",
+    "name": "tree",
+    "path": "folders/Objects/Block/tree.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_tree3",
   "tags": [],
   "resourceType": "GMObject",
 }

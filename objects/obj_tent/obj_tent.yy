@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_tent",
+    "path": "sprites/spr_tent/spr_tent.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "block",
-    "path": "folders/Objects/Block/block.yy",
+    "name": "house",
+    "path": "folders/Objects/Block/house.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_tent",
   "tags": [],
   "resourceType": "GMObject",
 }
