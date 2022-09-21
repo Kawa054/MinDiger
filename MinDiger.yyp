@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_tree2","path":"sprites/spr_tree2/spr_tree2.yy",},"order":1,},
+    {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":2,},
     {"id":{"name":"obj_rock1","path":"objects/obj_rock1/obj_rock1.yy",},"order":0,},
     {"id":{"name":"obj_ms_band_free","path":"objects/obj_ms_band_free/obj_ms_band_free.yy",},"order":1,},
     {"id":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},"order":1,},
@@ -227,6 +228,7 @@
     {"folderPath":"folders/Objects/Block/utils.yy","order":5,"resourceVersion":"1.0","name":"utils","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Block/house.yy","order":7,"resourceVersion":"1.0","name":"house","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Block/block.yy","order":8,"resourceVersion":"1.0","name":"block","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Shader/object_shadow.yy","order":2,"resourceVersion":"1.0","name":"object_shadow","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

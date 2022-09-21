@@ -1,17 +1,11 @@
 {
-  "spriteId": {
-    "name": "spr_bonfire",
-    "path": "sprites/spr_bonfire/spr_bonfire.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,15 +18,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "utils",
-    "path": "folders/Objects/Block/utils.yy",
+    "name": "block",
+    "path": "folders/Objects/Block/block.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_bonfire",
+  "name": "obj_block",
   "tags": [],
   "resourceType": "GMObject",
 }
