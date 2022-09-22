@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"LayerId":{"name":"5bf45c0c-f692-4be9-a9c2-d00c65d48171","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5dd36f1e-f01a-4961-8e29-4c9c39f092a3","path":"sprites/Sprite61/Sprite61.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5dd36f1e-f01a-4961-8e29-4c9c39f092a3","path":"sprites/Sprite61/Sprite61.yy",},"LayerId":{"name":"a3b289fe-565c-457f-97a8-5e6af09578c4","path":"sprites/Sprite61/Sprite61.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sprite61","path":"sprites/Sprite61/Sprite61.yy",},"resourceVersion":"1.0","name":"5dd36f1e-f01a-4961-8e29-4c9c39f092a3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},
+    "spriteId": {"name":"Sprite61","path":"sprites/Sprite61/Sprite61.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ab386690-1099-454c-9972-1adb3062a27f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"6cf46e88-71c5-41a4-bed4-b45b5e817c58","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5dd36f1e-f01a-4961-8e29-4c9c39f092a3","path":"sprites/Sprite61/Sprite61.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},
+    "parent": {"name":"Sprite61","path":"sprites/Sprite61/Sprite61.yy",},
     "resourceVersion": "1.4",
-    "name": "icon_start_button",
+    "name": "Sprite61",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5bf45c0c-f692-4be9-a9c2-d00c65d48171","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3b289fe-565c-457f-97a8-5e6af09578c4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/UI/Button.yy",
   },
   "resourceVersion": "1.0",
-  "name": "icon_start_button",
+  "name": "Sprite61",
   "tags": [],
   "resourceType": "GMSprite",
 }

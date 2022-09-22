@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"LayerId":{"name":"5bf45c0c-f692-4be9-a9c2-d00c65d48171","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"61b5aebd-7551-40d7-b810-d6443c36dcf0","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"61b5aebd-7551-40d7-b810-d6443c36dcf0","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},"LayerId":{"name":"ad211b2f-524b-4ccd-a110-e87969228985","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_start_button_hover","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},"resourceVersion":"1.0","name":"61b5aebd-7551-40d7-b810-d6443c36dcf0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},
+    "spriteId": {"name":"icon_start_button_hover","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ab386690-1099-454c-9972-1adb3062a27f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1935250f-20b4-4b7a-9cef-693b74a5ce99","path":"sprites/icon_start_button/icon_start_button.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ef0afbdb-45ef-4e43-97e9-a3e7a28e94b8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"61b5aebd-7551-40d7-b810-d6443c36dcf0","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"icon_start_button","path":"sprites/icon_start_button/icon_start_button.yy",},
+    "parent": {"name":"icon_start_button_hover","path":"sprites/icon_start_button_hover/icon_start_button_hover.yy",},
     "resourceVersion": "1.4",
-    "name": "icon_start_button",
+    "name": "icon_start_button_hover",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5bf45c0c-f692-4be9-a9c2-d00c65d48171","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ad211b2f-524b-4ccd-a110-e87969228985","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/UI/Button.yy",
   },
   "resourceVersion": "1.0",
-  "name": "icon_start_button",
+  "name": "icon_start_button_hover",
   "tags": [],
   "resourceType": "GMSprite",
 }
