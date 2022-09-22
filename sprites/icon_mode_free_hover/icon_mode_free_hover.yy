@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 476,
+  "bbox_left": 1,
+  "bbox_right": 336,
   "bbox_top": 0,
-  "bbox_bottom": 173,
+  "bbox_bottom": 122,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 477,
-  "height": 174,
+  "width": 338,
+  "height": 123,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"798150b9-a639-4817-a4f6-c20675664a1c","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"798150b9-a639-4817-a4f6-c20675664a1c","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"LayerId":{"name":"04fd810b-70ea-489d-888d-9cbc60cefc4d","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_mode_free_hover","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","name":"798150b9-a639-4817-a4f6-c20675664a1c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d7a153e9-10b4-44c9-853b-3b3bd467e5ed","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d7a153e9-10b4-44c9-853b-3b3bd467e5ed","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"LayerId":{"name":"8a853cec-0726-42b2-99ed-a7e3715b0a2a","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_mode_free_hover","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","name":"d7a153e9-10b4-44c9-853b-3b3bd467e5ed","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_mode_free_hover","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ebfe6aca-002c-4cfe-bb5d-40ea5c678d35","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"798150b9-a639-4817-a4f6-c20675664a1c","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"d22d8cb7-9df9-4867-b1f2-ef9596c3d838","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7a153e9-10b4-44c9-853b-3b3bd467e5ed","path":"sprites/icon_mode_free_hover/icon_mode_free_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"04fd810b-70ea-489d-888d-9cbc60cefc4d","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8a853cec-0726-42b2-99ed-a7e3715b0a2a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mode",
-    "path": "folders/Sprites/UI/Mode.yy",
+    "path": "folders/Sprites/Mode.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_mode_free_hover",

@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 476,
+  "bbox_left": 1,
+  "bbox_right": 336,
   "bbox_top": 0,
-  "bbox_bottom": 173,
+  "bbox_bottom": 123,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 477,
-  "height": 174,
+  "width": 338,
+  "height": 124,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"43b5416a-72f1-4078-92a0-88fe60aa4fcf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"43b5416a-72f1-4078-92a0-88fe60aa4fcf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"LayerId":{"name":"1973da6c-8fae-47a9-a40c-289ea238ae5e","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_mode_story","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","name":"43b5416a-72f1-4078-92a0-88fe60aa4fcf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cca27fc8-ce01-48c1-97a8-9625b4a430bf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cca27fc8-ce01-48c1-97a8-9625b4a430bf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"LayerId":{"name":"46de03fb-bdf6-4134-a3d8-0a67c6cb9010","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_mode_story","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","name":"cca27fc8-ce01-48c1-97a8-9625b4a430bf","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_mode_story","path":"sprites/icon_mode_story/icon_mode_story.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f73b8999-51d8-45a3-a0c8-ec36b8627202","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43b5416a-72f1-4078-92a0-88fe60aa4fcf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"08c87bb7-47b8-470b-a818-bda4641ea261","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cca27fc8-ce01-48c1-97a8-9625b4a430bf","path":"sprites/icon_mode_story/icon_mode_story.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1973da6c-8fae-47a9-a40c-289ea238ae5e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"46de03fb-bdf6-4134-a3d8-0a67c6cb9010","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mode",
-    "path": "folders/Sprites/UI/Mode.yy",
+    "path": "folders/Sprites/Mode.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_mode_story",

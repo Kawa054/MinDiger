@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Mode",
-    "path": "folders/Sprites/UI/Mode.yy",
+    "path": "folders/Sprites/Mode.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mode_story",

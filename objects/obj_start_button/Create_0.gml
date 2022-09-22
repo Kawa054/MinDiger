@@ -15,15 +15,18 @@ activate_button = function()
 	instance_deactivate_object(id);
 }
 
+
 //ホバーしているときの処理
 hovering_button = function() 
 {
-	hover = lerp(hover, hovering, 0.2);
-	y = lerp(y, ystart - hovering * 4, 0.2);
+	hover = lerp(hover, hovering, 0.1);
+	y = lerp(y, ystart - hovering * 2, 0.1);
+	sprite_index = icon_start_button_hover;
 }
 
 //ホバーしていない場合の処理
 not_hovering_button = function(){
-	hover = lerp(hover, hovering, 0.2);
-	y = lerp(y, ystart, 0.2);
+	hover = lerp(hover, hovering, 0.1);
+	y = lerp(y, ystart, 0.1);
+	sprite_index = icon_start_button;
 }

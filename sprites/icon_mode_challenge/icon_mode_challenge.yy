@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 476,
+  "bbox_right": 336,
   "bbox_top": 0,
-  "bbox_bottom": 173,
+  "bbox_bottom": 122,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 477,
-  "height": 174,
+  "width": 337,
+  "height": 123,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3c974068-2c23-4eb6-8e8f-bc07763b00a5","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3c974068-2c23-4eb6-8e8f-bc07763b00a5","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"LayerId":{"name":"a33ad70b-ada1-427e-9ee0-007f0165a01b","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_mode_challenge","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","name":"3c974068-2c23-4eb6-8e8f-bc07763b00a5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"74741b4a-1caf-4c54-930f-327e64181fb9","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"74741b4a-1caf-4c54-930f-327e64181fb9","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"LayerId":{"name":"630ac26d-8993-4fcd-a45d-b3502924691a","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_mode_challenge","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","name":"74741b4a-1caf-4c54-930f-327e64181fb9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_mode_challenge","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"da653a85-4a32-4845-8171-876aab1ba88b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c974068-2c23-4eb6-8e8f-bc07763b00a5","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"21ee93f3-fe6b-4a48-92a5-78f301512efe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74741b4a-1caf-4c54-930f-327e64181fb9","path":"sprites/icon_mode_challenge/icon_mode_challenge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a33ad70b-ada1-427e-9ee0-007f0165a01b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"630ac26d-8993-4fcd-a45d-b3502924691a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mode",
-    "path": "folders/Sprites/UI/Mode.yy",
+    "path": "folders/Sprites/Mode.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_mode_challenge",

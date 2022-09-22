@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 476,
+  "bbox_right": 336,
   "bbox_top": 0,
-  "bbox_bottom": 173,
+  "bbox_bottom": 122,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 477,
-  "height": 174,
+  "width": 337,
+  "height": 123,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"85442dcb-81d8-4720-8466-0983d8908add","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85442dcb-81d8-4720-8466-0983d8908add","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"LayerId":{"name":"60c6d313-a631-4446-ba11-b58b92530361","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_mode_challenge_hover","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","name":"85442dcb-81d8-4720-8466-0983d8908add","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ec44986a-9160-4cb7-8b04-04570b9f0293","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ec44986a-9160-4cb7-8b04-04570b9f0293","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"LayerId":{"name":"70941c04-5fae-434e-ab6f-fdc2ccf60769","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_mode_challenge_hover","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","name":"ec44986a-9160-4cb7-8b04-04570b9f0293","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_mode_challenge_hover","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2a6ea428-0246-4502-84ad-ca1ebf9b3d09","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85442dcb-81d8-4720-8466-0983d8908add","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"3015c816-686e-4a59-a3d1-6f531f977240","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec44986a-9160-4cb7-8b04-04570b9f0293","path":"sprites/icon_mode_challenge_hover/icon_mode_challenge_hover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"60c6d313-a631-4446-ba11-b58b92530361","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"70941c04-5fae-434e-ab6f-fdc2ccf60769","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mode",
-    "path": "folders/Sprites/UI/Mode.yy",
+    "path": "folders/Sprites/Mode.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_mode_challenge_hover",
