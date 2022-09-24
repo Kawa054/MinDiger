@@ -65,11 +65,11 @@ activate_button = function()
 //ホバーしていないときの処理
 not_hovering_button = function() 
 {
-	sprite_index = icon_backbutton;
+	sprite_index = icon_home;
 }
 
 //ホバーしているときの処理
 hovering_button = function() 
 {
-	sprite_index = icon_backbutton_hover;
+	sprite_index = icon_home_hover;
 }
