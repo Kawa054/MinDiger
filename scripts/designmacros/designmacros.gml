@@ -4,7 +4,8 @@
 
 //------------- スタート画面関係 --------------//
 
-#macro START_BUTTON_Y 760   //スタートボタンのY座標(X座標は自動で画面中心になるS)
+#macro START_BUTTON_Y 700   //スタートボタンのY座標(X座標は自動で画面中心になる)
+#macro EXIT_BUTTON_Y 810
 #macro SETTING_BUTTON_X 1700 //設定ボタンのX座標
 #macro SETTING_BUTTON_Y 70  //設定ボタンのY座標
 #macro BACK_BUTTON_X 100 //戻るボタンのX座標
@@ -30,6 +31,9 @@
 
 #macro DATA_SELECT_BUTTON_WIDTH 1200 //ボタンの横幅
 #macro DATA_SELECT_BUTTON_SEP_Y 20 //ボタンの縦間隔
+#macro DATA_SELECT_BUTTON_ICON_MARGIN_X 20 //ボタン右下の複製・削除ボタンのマージン
+#macro DATA_SELECT_BUTTON_ICON_SEP_X 20 //ボタン右下の複製・削除ボタンの間隔
+
 #macro DATA_SELECT_BUTTON_MARGE_AMOUNT 0.32 //ボタン選択中(ホバー状態)の色の強さ(0~1)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_R 255 //ボタン選択中の合成色(R)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_G 255 //ボタン選択中の合成色(G)
@@ -56,6 +60,11 @@
 //------------- Loading画面の設定 -------------//
 #macro LOADING_START_TIME 0.3 //ロード画面までの暗転時間
 #macro LOADING_MIN_TIME 1.5 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
+
+
+//------------- ポップアップウィンドウの設定 -------------//
+#macro POPUP_WIDTH 700 //ポップアップウィンドウのX方向サイズ
+#macro POPUP_HEIGHT 360 //ポップアップウィンドウのY方向サイズ
 
 
 //------------- モード画面の設定 -------------//

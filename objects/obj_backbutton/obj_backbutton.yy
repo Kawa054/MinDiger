@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "icon_backbutton",
-    "path": "sprites/icon_backbutton/icon_backbutton.yy",
+    "name": "icon_home",
+    "path": "sprites/icon_home/icon_home.yy",
   },
   "solid": false,
   "visible": true,

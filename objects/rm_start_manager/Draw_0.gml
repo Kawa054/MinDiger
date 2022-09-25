@@ -7,7 +7,8 @@ switch(room_stat){
 		if(!is_setting_opening){
 			layer_background_sprite(back_id, spr_title_background);
 			instance_activate_object(obj_start_button);
-			instance_activate_object(obj_settings_button);
+			instance_activate_object(obj_exit_button);	
+			instance_deactivate_object(obj_settings_button);
 		}
 	break;
 	
@@ -20,6 +21,7 @@ switch(room_stat){
 			var lay_id = layer_get_id("Background");
 			var back_id = layer_background_get_id(lay_id);
 			layer_background_sprite(back_id, spr_notitle_background);
+			instance_activate_object(obj_settings_button);
 		}
 		room_timer++;
 		if(room_timer <= START_BACKGROUND_EFFECT_TIME*60){

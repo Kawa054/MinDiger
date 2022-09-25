@@ -1,3 +1,5 @@
+global.button_hovering_active = true;
+
 //オブジェクトの方向, 三角関数値と対応させる
 #macro RIGHT 0
 #macro UP 1

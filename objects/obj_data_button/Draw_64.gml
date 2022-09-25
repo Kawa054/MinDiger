@@ -37,6 +37,10 @@ if(type == 0){
 	draw_sprite(icon_data_select_bottom2, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+1*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
 	draw_sprite(icon_data_select_bottom3, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+2*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
 	draw_sprite(icon_data_select_bottom4, 0, x+2*DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_width+3*(story_icon_size+5.0), y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-story_icon_size);
+	
+	//各ボタンの描画
+	draw_sprite(del_icon, 0, x + width - 2*(sp_sizeX + DATA_SELECT_BUTTON_ICON_SEP_X) - DATA_SELECT_BUTTON_ICON_MARGIN_X, y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-sp_sizeY);
+	draw_sprite(dup_icon, 0, x + width - 1*(sp_sizeX + DATA_SELECT_BUTTON_ICON_SEP_X) - DATA_SELECT_BUTTON_ICON_MARGIN_X, y+DATA_SELECT_CHARA_IMAGE_MARGIN+chara_image_height-sp_sizeY);
 
 //データ未生成時の場合
 }else if(type == 1){
