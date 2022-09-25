@@ -65,7 +65,21 @@
 //------------- ポップアップウィンドウの設定 -------------//
 #macro POPUP_WIDTH 700 //ポップアップウィンドウのX方向サイズ
 #macro POPUP_HEIGHT 360 //ポップアップウィンドウのY方向サイズ
+#macro POPUP_INFO_MARGIN 40 
+#macro POPUP_TEXT_MARGIN_Y 20
+#macro POPUP_TEXT_SEP_Y 30
+#macro POPUP_SELECT_MARGIN_UNDER 40
+#macro POPUP_SELECT_SEP_X 50 
+#macro POPUP_SELECT_OFFSET_Y 13
 
+#macro POPUP_YES_WIDTH 130   //ポップアップウィンドウの「はい」の横幅
+#macro POPUP_YES_HEIGHT 80	 //ポップアップウィンドウの「はい」の縦幅
+#macro POPUP_NO_WIDTH 130	 //ポップアップウィンドウの「いいえ」の横幅
+#macro POPUP_NO_HEIGHT 80	 //ポップアップウィンドウの「いいえ」の縦幅
+
+#macro POPUP_MAINCOLOR_R 156 //ポップアップウィンドウのメインカラー(R)
+#macro POPUP_MAINCOLOR_G 133 //ポップアップウィンドウのメインカラー(G)
+#macro POPUP_MAINCOLOR_B 106 //ポップアップウィンドウのメインカラー(B)
 
 //------------- モード画面の設定 -------------//
 #macro MODE_SELECT_Y 200 //モード選択UIのY座標

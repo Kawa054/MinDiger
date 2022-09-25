@@ -23,9 +23,14 @@ dup_icon = icon_duplicate;
 activate_button = function() 
 {
 	if(hover_duplicate_button){
-		
+		create_popup(POPUP_INFOTYPE_COPY, POPUP_RESPONSETYPE_YN, ["コピーしますか?"], [
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
+		]);
 	}else if(hover_delete_button){
-		
+		create_popup(POPUP_INFOTYPE_CARE, POPUP_RESPONSETYPE_YN, ["【データ名】", "消しますか？"], [
+		    c_black, 
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
+		]);
 	}else{
 		var _fx_struct1 = layer_get_fx( "blur_effect");
 		var _fx_struct2 = layer_get_fx("color_effect");
@@ -72,5 +77,9 @@ hovering_button = function()
 //ホバーしていない場合の処理
 not_hovering_button = function(){
 	hover = lerp(hover, hovering, 0.1);
+	hover_duplicate_button = false;
+	hover_delete_button = false;
+	del_icon = icon_delete;
+	dup_icon = icon_duplicate;
 	y = lerp(y, ystart, 0.1);
 }

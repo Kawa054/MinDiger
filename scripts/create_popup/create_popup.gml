@@ -1,14 +1,15 @@
 // info_type      information type
 // response_type  only yes or no, or both
 
-function create_popup(info_type, response_type, sentence){
+function create_popup(info_type, response_type, sentence, colors){
 	
-	var x =  display_get_gui_width() / 2;
-	var y =  display_get_gui_height() / 2;
+	var _x =  display_get_gui_width() / 2;
+	var _y =  display_get_gui_height() / 2;
 	var lay_id = layer_get_id("GUI_upper");
 	
-	var object = instance_create_layer(x - POPUP_WIDTH/2, y - POPUP_HEIGHT/2, lay_id, obj_popup);
-	object.info_type = info_type;
-	object.response_type = response_type;
-	object.sentence = sentence;
+	var obj = instance_create_layer(_x - POPUP_WIDTH/2, _y - POPUP_HEIGHT/2, lay_id, obj_popup);
+	obj.info_type = info_type;
+	obj.response_type = response_type;
+	obj.sentence = sentence;
+	obj.colors = colors;
 }
