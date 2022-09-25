@@ -1,29 +1,93 @@
 function break_dg_block(xcell, ycell){
+	//壊すタイルのINDEXを取得
 	var lay_id = layer_get_id("layer_ground");
 	var map_id = layer_tilemap_get_id(lay_id);
-	var ground = map_id;
-		
-	var walls = [ 
-		is_wall(tile_get_index(tilemap_get(map_id, xcell, ycell - 1))),
-		is_wall(tile_get_index(tilemap_get(map_id, xcell + 1, ycell))),
-		is_wall(tile_get_index(tilemap_get(map_id, xcell, ycell + 1))),
-		is_wall(tile_get_index(tilemap_get(map_id, xcell - 1, ycell))),
-		
-		is_wall(tile_get_index(tilemap_get(map_id, xcell, ycell - 2))),
-	];
-	show_debug_message(walls);
-	lay_id = layer_get_id("TileData");
-	map_id = layer_tilemap_get_id(lay_id);
+	var tile_data  = tilemap_get(map_id, xcell, ycell);
+	var tile_index = tile_get_index(tile_data);
 	
-	var g = tilemap_get(map_id, 3, 0); //地面データ
-	tilemap_set(ground, g, xcell, ycell);
+	//地面タイルと側面壁の取得
+	var map_id2 = layer_tilemap_get_id(layer_get_id("TileData"));
+	var ground = tilemap_get(map_id2, 3, 0);
+	var wall = tilemap_get(map_id2, 1, 0);
 	
-	if(walls[0]){
-		if(walls[4]) tilemap_set(ground, tilemap_get(map_id, irandom_range(0, 2), 1), xcell, ycell - 2);
-		tilemap_set(ground, tilemap_get(map_id, 1, 0), xcell, ycell - 1);
+	//側面壁の場合
+	if(is_sidewall(tile_index)){
+		var tile_data_y2 = tilemap_get(map_id, xcell, ycell - 2);
+		if(is_wall(tile_get_index(tile_data_y2))){
+			//Y-2が壁の場合
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, wall, xcell, ycell - 1);
+		}else{
+			//Y-2が地面の場合
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell - 1);
+		}
 	}
 	
-	if(walls[1]) tilemap_set(ground, tilemap_get(map_id, 0, 3), xcell + 1, ycell);
-	if(walls[2]) tilemap_set(ground, tilemap_get(map_id, 0, 4), xcell, ycell + 1);
-	if(walls[3]) tilemap_set(ground, tilemap_get(map_id, 0, 2), xcell - 1, ycell);
+	var d = [
+		tile_get_index(tilemap_get(map_id, xcell, ycell - 2)),
+		tile_get_index(tilemap_get(map_id, xcell, ycell - 1)),
+		tile_get_index(tilemap_get(map_id, xcell, ycell + 1)),
+		tile_get_index(tilemap_get(map_id, xcell, ycell + 2)),
+	]
+	
+	var data = [ 
+		is_wall(d[0]) || is_sidewall(d[0]),
+		is_wall(d[1]) || is_sidewall(d[1]),
+		is_wall(d[2]) || is_sidewall(d[2]),
+		is_wall(d[3]) || is_sidewall(d[3]),
+	];
+	
+	//壁の場合
+	if(is_wall(tile_index)){
+		
+		if(!data[0] && data[1] && data[2] && data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell - 1);
+			
+		}else if(data[0] && data[1] && data[2] && data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, wall, xcell, ycell - 1);
+			
+		}else if(!data[0] && !data[1] && data[2] && data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			
+		}else if(data[0] && data[1] && data[2] && !data[3]){
+			tilemap_set(map_id, wall, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell + 1);
+			
+		}else if(data[0] && data[1] && !data[2] && !data[3]){
+			tilemap_set(map_id, wall, xcell, ycell);
+			tilemap_set(map_id, wall, xcell, ycell + 1);
+		}else if(!data[0] && data[1] && data[2] && !data[3]){
+			tilemap_set(map_id, wall, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell + 1);
+			
+		}else if(!data[0] && !data[1] && data[2] && !data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell + 1);
+			
+		}else if(!data[0] && data[1] && !data[2] && !data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell - 1);
+			
+		}else if(data[0] && !data[1] && data[2] && data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			
+		}else if(data[0] && !data[1] && data[2] && !data[3]){
+			tilemap_set(map_id, ground, xcell, ycell);
+			tilemap_set(map_id, ground, xcell, ycell + 1);
+		}
+	}
+	
+	//情報の更新
+	for(var i = -2; i <= 2; i++){
+		for(var j = -2; j <= 2; j++){
+			var update_tile = tilemap_get(map_id, xcell + j, ycell + i);
+			var index = tile_get_index(update_tile);
+			if(is_wall(index)){
+				tilemap_set(map_id, get_update_dangeontile(map_id, xcell + j, ycell + i), xcell + j, ycell + i);
+			}
+		}
+	}
 }
