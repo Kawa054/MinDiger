@@ -1,4 +1,6 @@
 is_setting_opening = false;
+start_game = false;
+room_timer = 0;
 
 blur_set(1);
 

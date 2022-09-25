@@ -41,12 +41,12 @@ if (mouse_check_button_released(mb_left))
 
 	if (hovering) 
 	{
-		//クリック時の処理
+		//クリック時の処理(チャタリング回避)
 		if(hover_yes){ 
 			alarm[0] = 5;
 		}
 		if(hover_no){ 
-			alarm[0] = 5;
+			alarm[1] = 5;
 		}
 	}
 	

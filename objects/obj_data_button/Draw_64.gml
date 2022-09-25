@@ -62,4 +62,7 @@ if(type == 0){
 	draw_line_width(x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+DATA_SELECT_CHARA_IMAGE_MARGIN/2, x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, DATA_SELECT_BUTTON_FRAMELINE_WIDTH);
 	draw_line_width(x + DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, x+width-DATA_SELECT_CHARA_IMAGE_MARGIN/2, y+height-DATA_SELECT_CHARA_IMAGE_MARGIN/2, DATA_SELECT_BUTTON_FRAMELINE_WIDTH);
 	
+	//データ追加ボタンの描画
+	draw_sprite(plus_icon, 0, x + width/2 - sp_sizeX/2, y + height / 2 - sp_sizeY/2);
+	
 }

@@ -7,6 +7,8 @@ move_spd = 10;
 action_width = 40;
 action_height = 40;
 
+is_action = false;
+
 //衝突時にめり込みを防ぐオブジェクト一覧
 collide_objects = [obj_wall, obj_npc, obj_block];
 

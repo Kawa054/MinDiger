@@ -10,7 +10,7 @@ hover = 0;
 //クリックされたときの処理
 activate_button = function() 
 {
-	create_popup(POPUP_INFOTYPE_EXIT, POPUP_RESPONSETYPE_YN, ["", "ゲームを終了しますか？"], [
+	create_popup(POPUP_ID_EXIT, POPUP_INFOTYPE_EXIT, POPUP_RESPONSETYPE_YN, ["", "ゲームを終了しますか？"], [
 		make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
 		make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 	]);

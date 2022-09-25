@@ -19,7 +19,7 @@ if(draw_char < text_length[page]){
 	draw_char = clamp(draw_char, 0, text_length[page]);
 }
 
-accept_key = keyboard_check_pressed(vk_space);
+accept_key = keyboard_check_pressed(ord("E"));
 if(accept_key){
 	if(draw_char == text_length[page]){
 		//次のページへ
@@ -27,6 +27,7 @@ if(accept_key){
 			page++;
 			draw_char = 0;
 		}else{
+			obj_player.is_action = false;
 			instance_destroy();
 		}
 	}else{
@@ -42,17 +43,24 @@ var textbox_spr_height = sprite_get_height(textbox_spr);
 draw_sprite_ext(textbox_spr, textbox_img, textbox_x + text_x_offset[page], textbox_y, textbox_width/textbox_spr_width, textbox_height/textbox_spr_height, 0, c_white, 1);
 
 //キャラクターの描画
-draw_sprite(textbox_charaimg, 0, textbox_charaimg_offset_x + textbox_x, textbox_charaimg_offset_y + textbox_y);
+draw_sprite_stretched(textbox_charaimg, 0, textbox_charaimg_offset_x + textbox_x, textbox_charaimg_offset_y + textbox_y, textbox_charaimg_width, textbox_charaimg_height);
+
+
 //ボタンの描画
-draw_sprite(textbox_buttonimg, 0, textbox_x + textbox_width - 80, textbox_charaimg_offset_y + textbox_y + textbox_charaimg_height - 40);
+draw_set_color(make_color_rgb(188, 152, 154));
+draw_circle(textbox_x + textbox_width - 50, textbox_charaimg_offset_y + textbox_y + textbox_charaimg_height - 20, 25, false);
+draw_set_color(c_white);
+draw_circle(textbox_x + textbox_width - 50, textbox_charaimg_offset_y + textbox_y + textbox_charaimg_height - 20, 22, false);
+draw_set_color(make_color_rgb(188, 152, 154));
+draw_text(textbox_x + textbox_width - 50 - 7, textbox_charaimg_offset_y + textbox_y + textbox_charaimg_height - 20 - 14, "E");
 
 //会話文の描画
 var _draw_text = string_copy(text[page], 1, draw_char);
 draw_set_color(make_color_rgb(DIALOG_TEXT_COLOR_R, DIALOG_TEXT_COLOR_G, DIALOG_TEXT_COLOR_B));
-draw_text_ext(textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x + text_x_offset[page] + textbox_offset, textbox_y + textbox_offset + textbox_charaimg_offset_y , _draw_text, textbox_line_separation, textbox_line_width);
+draw_text_ext(textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x + text_x_offset[page] - textbox_offset, textbox_y + textbox_offset + textbox_charaimg_offset_y , _draw_text, textbox_line_separation, textbox_line_width);
 
 //名前の描画
 var _draw_text = string_copy(text[page], 1, draw_char);
 draw_set_color(make_color_rgb(DIALOG_CHARA_NAME_COLOR_R, DIALOG_CHARA_NAME_COLOR_G, DIALOG_CHARA_NAME_COLOR_B));
-draw_sprite(textbox_name_underscore, 0, textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x, textbox_charaimg_height + textbox_y + textbox_offset);
-draw_text_ext(textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x + text_x_offset[page] + textbox_offset - 50, textbox_charaimg_height + textbox_y - 30 + textbox_offset, textbox_chara_name, textbox_line_separation, textbox_line_width);
+draw_sprite(textbox_name_underscore, 0, textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x, textbox_charaimg_height + textbox_y + textbox_offset - 20);
+draw_text_ext(textbox_charaimg_offset_x + textbox_charaimg_width + textbox_x + text_x_offset[page] + textbox_offset - 50, textbox_charaimg_height + textbox_y - 50 + textbox_offset, textbox_chara_name, textbox_line_separation, textbox_line_width);

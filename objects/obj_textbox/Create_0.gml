@@ -1,11 +1,11 @@
 
-textbox_width = 800;  //テキストボックスの横幅
-textbox_height = 280; //テキストボックスの縦幅
-textbox_offset = 8;  //テキストボックスの周りのマージン
+textbox_width = 600;  //テキストボックスの横幅
+textbox_height = 240; //テキストボックスの縦幅
+textbox_offset = 20;  //テキストボックスの周りのマージン
 
 
-textbox_charaimg_width = 250;
-textbox_charaimg_height = 250;
+textbox_charaimg_width = 200;
+textbox_charaimg_height = 200;
 textbox_charaimg_offset_x = 50;
 textbox_charaimg_offset_y = 10;
 textbox_charaimg = spr_chara_ice1_dialog;
