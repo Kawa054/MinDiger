@@ -10,7 +10,7 @@ height = chara_image_height + 2*DATA_SELECT_CHARA_IMAGE_MARGIN;
 player_name = "aAA";
 player_playtime = "AA";
 
-i = 0;
+data_index = 0;
 type = 0;
 hover = 0;
 
@@ -27,12 +27,13 @@ plus_icon = icon_plus;
 //クリックされたときの処理
 activate_button = function() 
 {
+	global.selected_data_index = data_index;
 	if(hover_duplicate_button){
 		create_popup(POPUP_ID_COPY, POPUP_INFOTYPE_COPY, POPUP_RESPONSETYPE_YN, ["コピーしますか?"], [
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);
 	}else if(hover_delete_button){
-		create_popup(POPUP_ID_DELETE, POPUP_INFOTYPE_CARE, POPUP_RESPONSETYPE_YN, ["【データ名】", "消しますか？"], [
+		create_popup(POPUP_ID_DELETE, POPUP_INFOTYPE_CARE, POPUP_RESPONSETYPE_YN, ["【DATA" + string(data_index) + " : " + get_playername(data_index) +"】", "消しますか？"], [
 		    c_black, 
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);
@@ -42,10 +43,8 @@ activate_button = function()
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);		
 	}else{
-		var _fx_struct1 = layer_get_fx( "blur_effect");
-		var _fx_struct2 = layer_get_fx("color_effect");
-		fx_set_parameter(_fx_struct1, "g_LinearBlurVector", [0, 0]);
-		fx_set_parameter(_fx_struct2, "g_Intensity", 0);
+		load_savedata(data_index);
+		blur_reset();
 		rm_start_manager.room_stat = ROOM_START_STAT_LOADING;
 		rm_start_manager.room_timer = 0;
 		instance_deactivate_layer(layer_get_id("GUI"));
