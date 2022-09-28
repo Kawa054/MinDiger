@@ -81,6 +81,13 @@
 #macro POPUP_MAINCOLOR_G 133 //ポップアップウィンドウのメインカラー(G)
 #macro POPUP_MAINCOLOR_B 106 //ポップアップウィンドウのメインカラー(B)
 
+
+//------------- 名前入力の設定 -------------//
+#macro POPUP_NAMEINPUT_WIDTH 1500 //ポップアップウィンドウのX方向サイズ
+#macro POPUP_NAMEINPUT_HEIGHT 800 //ポップアップウィンドウのY方向サイズ
+
+
+
 //------------- モード画面の設定 -------------//
 #macro MODE_SELECT_Y 200 //モード選択UIのY座標
 #macro MODE_SELECT_SEP_X 40 //モード選択UIの横間隔
