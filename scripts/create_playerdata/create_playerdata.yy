@@ -3,10 +3,10 @@
   "isCompatibility": false,
   "parent": {
     "name": "function",
-    "path": "folders/Objects/Manager/rm_manager/function.yy",
+    "path": "folders/Objects/Manager/core_manager/function.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_setting_file",
+  "name": "create_playerdata",
   "tags": [],
   "resourceType": "GMScript",
 }

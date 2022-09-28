@@ -9,6 +9,10 @@ global.button_hovering_active = true;
 //保存可能セーブデータ数の設定
 #macro SAVEDATA_NUM 4
 
+//セーブデータファイル関連
+#macro SAVEDATA_DIR "SaveData/data"
+#macro SAVEDATA_DATAFILE "/savedata.json"
+
 #macro DANGEON_SIZE_X 7000
 #macro DANGEON_SIZE_Y 7000
 

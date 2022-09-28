@@ -6,7 +6,7 @@
     "path": "folders/Objects/Manager/core_manager/function.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_savedata",
+  "name": "get_playtime",
   "tags": [],
   "resourceType": "GMScript",
 }

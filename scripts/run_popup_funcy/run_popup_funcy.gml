@@ -4,6 +4,7 @@ function run_popup_funcY(popup_id){
 		break;
 		
 		case POPUP_ID_DELETE:
+			delete_savedata(global.selected_data_index);
 		break;
 		
 		case POPUP_ID_EXIT:
