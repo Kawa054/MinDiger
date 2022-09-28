@@ -4,7 +4,8 @@
 
 //------------- スタート画面関係 --------------//
 
-#macro START_BUTTON_Y 760   //スタートボタンのY座標(X座標は自動で画面中心になるS)
+#macro START_BUTTON_Y 700   //スタートボタンのY座標(X座標は自動で画面中心になる)
+#macro EXIT_BUTTON_Y 810
 #macro SETTING_BUTTON_X 1700 //設定ボタンのX座標
 #macro SETTING_BUTTON_Y 70  //設定ボタンのY座標
 #macro BACK_BUTTON_X 100 //戻るボタンのX座標
@@ -30,6 +31,9 @@
 
 #macro DATA_SELECT_BUTTON_WIDTH 1200 //ボタンの横幅
 #macro DATA_SELECT_BUTTON_SEP_Y 20 //ボタンの縦間隔
+#macro DATA_SELECT_BUTTON_ICON_MARGIN_X 20 //ボタン右下の複製・削除ボタンのマージン
+#macro DATA_SELECT_BUTTON_ICON_SEP_X 20 //ボタン右下の複製・削除ボタンの間隔
+
 #macro DATA_SELECT_BUTTON_MARGE_AMOUNT 0.32 //ボタン選択中(ホバー状態)の色の強さ(0~1)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_R 255 //ボタン選択中の合成色(R)
 #macro DATA_SELECT_BUTTON_MARGE_COLOR_G 255 //ボタン選択中の合成色(G)
@@ -56,6 +60,32 @@
 //------------- Loading画面の設定 -------------//
 #macro LOADING_START_TIME 0.3 //ロード画面までの暗転時間
 #macro LOADING_MIN_TIME 1.5 //ロード画面の最短表示時間(何もロードするものがない場合の時間等)
+
+
+//------------- ポップアップウィンドウの設定 -------------//
+#macro POPUP_WIDTH 700 //ポップアップウィンドウのX方向サイズ
+#macro POPUP_HEIGHT 360 //ポップアップウィンドウのY方向サイズ
+#macro POPUP_INFO_MARGIN 40 
+#macro POPUP_TEXT_MARGIN_Y 20
+#macro POPUP_TEXT_SEP_Y 30
+#macro POPUP_SELECT_MARGIN_UNDER 40
+#macro POPUP_SELECT_SEP_X 50 
+#macro POPUP_SELECT_OFFSET_Y 13
+
+#macro POPUP_YES_WIDTH 130   //ポップアップウィンドウの「はい」の横幅
+#macro POPUP_YES_HEIGHT 80	 //ポップアップウィンドウの「はい」の縦幅
+#macro POPUP_NO_WIDTH 130	 //ポップアップウィンドウの「いいえ」の横幅
+#macro POPUP_NO_HEIGHT 80	 //ポップアップウィンドウの「いいえ」の縦幅
+
+#macro POPUP_MAINCOLOR_R 156 //ポップアップウィンドウのメインカラー(R)
+#macro POPUP_MAINCOLOR_G 133 //ポップアップウィンドウのメインカラー(G)
+#macro POPUP_MAINCOLOR_B 106 //ポップアップウィンドウのメインカラー(B)
+
+
+//------------- 名前入力の設定 -------------//
+#macro POPUP_NAMEINPUT_WIDTH 1500 //ポップアップウィンドウのX方向サイズ
+#macro POPUP_NAMEINPUT_HEIGHT 800 //ポップアップウィンドウのY方向サイズ
+
 
 
 //------------- モード画面の設定 -------------//

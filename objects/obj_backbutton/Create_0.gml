@@ -57,7 +57,12 @@ activate_button = function()
 			rm_modeselect_manager.is_setting_opening = false;
 			exit;
 		}
-		back_from_modeselect();
+		
+		create_popup(POPUP_ID_HOME, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_YN,  ["", "タイトル画面へ戻りますか？"], [
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
+		]);
+		
 		exit;
 	}
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_down",
-    "path": "sprites/spr_player_down/spr_player_down.yy",
+    "name": "spr_player_pickaxe_down",
+    "path": "sprites/spr_player_pickaxe_down/spr_player_pickaxe_down.yy",
   },
   "solid": false,
   "visible": true,

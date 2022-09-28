@@ -9,11 +9,12 @@ function action(argument0, argument1){
 
 	//プレイヤーの方向にアクション可能のオブジェクトがあるかを取得
 	var x_direction = dcos(90*face);
-	var y_direction = dsin(90*face);
+	var y_direction = -dsin(90*face);
 	instance_id_data = instance_place(x + action_width*x_direction, y + action_height*y_direction, obj_npc);
 	//show_debug_message(90*face);
 	if(instance_id_data != noone){
 		if(action_key_pressed){
+			obj_player.is_action = true;
 			//show_debug_message(variable_instance_get(instance_id_data, "npc_id"));	
 			var sentence_num = variable_instance_get(instance_id_data, "sentence_num");
 			var iid = instance_create_depth(instance_id_data.x, instance_id_data.y, -9999, obj_textbox);

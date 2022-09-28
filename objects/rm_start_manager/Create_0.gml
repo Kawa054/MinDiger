@@ -12,6 +12,7 @@ draw_set_halign(fa_middle);
 is_setting_opening = false;
 
 instance_deactivate_object(obj_backbutton);
+instance_deactivate_object(obj_settings_button);
 instance_deactivate_object(obj_setting_menu);
 
 blur_reset();
