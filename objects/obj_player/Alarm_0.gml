@@ -1,0 +1,1 @@
+is_using_pickaxe = false;

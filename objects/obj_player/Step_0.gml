@@ -12,6 +12,17 @@ var y_direction = down_key - up_key;
 // プレイヤーの情報を更新する
 depth = -bbox_top;
 
+//ブロック壊す処理
+if (mouse_check_button_pressed(mb_left)) {
+	is_using_pickaxe = true;
+	alarm[0] = 20;
+	if(room == rm_dangeon){
+		if is_wall_at_cell(floor(px + x_direction*0.5), floor(py + y_direction*0.5)){
+			break_dg_block(floor(px + x_direction*0.5), floor(py + y_direction*0.5));
+		}
+	}
+} 
+
 if(!is_action){
 	update_player_sprite(x_direction, y_direction);
 	update_player_position(x_direction, y_direction);
