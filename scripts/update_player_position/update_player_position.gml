@@ -18,12 +18,41 @@ function update_player_position(argument0, argument1){
 			}
 			xspd = 0;
 		}
+		
 		if place_meeting(x, y + yspd, collide_objects[i]){
 			//途中で止まらないよう微調整する
 			while(!place_meeting(x, y + y_direction, collide_objects[i])){
 				y += y_direction;
 			}
 			yspd = 0;
+		}
+		if place_meeting(x + xspd, y, obj_dgblock) ||  place_meeting(x, y + yspd, obj_dgblock){
+			room_goto(rm_dangeon);
+		}
+	}
+	
+	//ダンジョン内の場合
+	if(room == rm_dangeon){
+		px = (obj_player.x + 64) / 128;
+		py = (obj_player.y + 64) / 128;
+		if is_wall_at_cell(floor(px + x_direction*0.5), floor(py)){
+			//途中で止まらないよう微調整する
+			//while(!is_wall_at(x + x_direction, y)){
+				//x += x_direction;
+			//}
+			xspd = 0;
+		}
+		
+		if is_wall_at_cell(floor(px), floor(py + y_direction*0.5)){
+			//途中で止まらないよう微調整する
+			//while(!is_wall_at(px, floor(py + y_direction*0.5))){
+				//y += y_direction;
+			//}
+			yspd = 0;
+		}
+		
+		if is_stair(floor(px), floor(py)){
+			room_goto(rm_game);
 		}
 	}
 	

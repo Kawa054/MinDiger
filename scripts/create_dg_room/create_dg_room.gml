@@ -4,8 +4,8 @@ function create_dg_rooms(tilemap){
 
 	var tiledata = tilemap_get(map_id, 3, 0);
 	
-	for(var i = 0; i < 3; i++){
-		for(var j = 0; j < 3; j++){
+	for(var i = 1; i < 3; i++){
+		for(var j = 1; j < 3; j++){
 			var roomX = i*(DANGEON_SIZE_X / 128) / 3;
 			var roomY = j*(DANGEON_SIZE_Y / 128) / 3;
 		}

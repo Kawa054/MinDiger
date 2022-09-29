@@ -43,11 +43,13 @@ activate_button = function()
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);		
 	}else{
-		load_savedata(data_index);
-		blur_reset();
-		rm_start_manager.room_stat = ROOM_START_STAT_LOADING;
-		rm_start_manager.room_timer = 0;
-		instance_deactivate_layer(layer_get_id("GUI"));
+		if(exist_savedata(data_index)){
+			load_savedata(data_index);
+			blur_reset();
+			rm_start_manager.room_stat = ROOM_START_STAT_LOADING;
+			rm_start_manager.room_timer = 0;
+			instance_deactivate_layer(layer_get_id("GUI"));
+		}
 	}
 }
 

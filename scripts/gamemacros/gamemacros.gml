@@ -13,8 +13,15 @@ global.button_hovering_active = true;
 #macro SAVEDATA_DIR "SaveData/data"
 #macro SAVEDATA_DATAFILE "/savedata.json"
 
-#macro DANGEON_SIZE_X 7000
-#macro DANGEON_SIZE_Y 7000
+#macro DANGEON_SIZE_X 12800
+#macro DANGEON_SIZE_Y 12800
+
+
+#macro dangeon_start_x 15
+#macro dangeon_start_y 11
+#macro dangeon_end_x 88
+#macro dangeon_end_y 88
+
 
 #macro SETTINGS_STATE_GENERAL 0
 #macro SETTINGS_STATE_KEY 1
