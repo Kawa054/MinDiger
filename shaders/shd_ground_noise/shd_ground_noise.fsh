@@ -60,7 +60,7 @@ void main()
     //gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 	
 	//ベースのピクセルデータの取得
-	vec2 vect = vec2(v_vTexcoord.x + ppos.x/1920.0, v_vTexcoord.y + ppos.y/1080.0);
+	vec2 vect = vec2(v_vTexcoord.x + ppos.x/1824.0, v_vTexcoord.y + ppos.y/1026.0);
 	vec2 v = vec2(v_vTexcoord.x-200.0, v_vTexcoord.y-200.0);
 	gl_FragColor = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
 	if(gl_FragColor.r*255.0 >= GROUND_COLOR_R - 0.0 && gl_FragColor.r*255.0 <= GROUND_COLOR_R + 0.0 && 

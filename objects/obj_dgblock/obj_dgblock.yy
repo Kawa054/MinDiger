@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "block",
-    "path": "folders/Objects/Block/block.yy",
+    "name": "warp_block",
+    "path": "folders/Objects/Block/warp_block.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dgblock",
