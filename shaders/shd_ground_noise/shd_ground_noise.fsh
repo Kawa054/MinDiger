@@ -4,6 +4,7 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
+uniform float noise_size;
 uniform float GROUND_COLOR_R;
 uniform float GROUND_COLOR_G;
 uniform float GROUND_COLOR_B;
@@ -68,10 +69,10 @@ void main()
 		gl_FragColor.b*255.0 >= GROUND_COLOR_B - 0.0 && gl_FragColor.b*255.0 <= GROUND_COLOR_B + 0.0){
 		float noise1 = fractal_noise(vect*15.0, 5, 0.5);
 		float noise2 = fractal_noise((vect - vec2(200, 200))*15.0, 5, 0.5);
-		if(noise1 <= 0.50){
+		if(noise1 <= noise_size){
 			gl_FragColor = vec4(NOISE_COLOR_R1, NOISE_COLOR_G1, NOISE_COLOR_B1, 1.0);
 		}
-		if(noise2 <= 0.32){
+		if(noise2 <= noise_size - 0.18){
 			gl_FragColor = vec4(NOISE_COLOR_R2, NOISE_COLOR_G2, NOISE_COLOR_B2, 1.0);
 		}
 	}

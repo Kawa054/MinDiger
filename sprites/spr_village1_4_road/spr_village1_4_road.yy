@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"db639732-3835-48cc-b155-89f5f70b2ad8","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"db639732-3835-48cc-b155-89f5f70b2ad8","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"LayerId":{"name":"2e1ebd71-b3b9-4d41-a073-a4815c48d090","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_village1_4_road","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","name":"db639732-3835-48cc-b155-89f5f70b2ad8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7aeaf26c-2c15-449a-949d-1289f93ff95d","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7aeaf26c-2c15-449a-949d-1289f93ff95d","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"LayerId":{"name":"589cab53-b93a-4654-9a48-aa1cd915df28","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_village1_4_road","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","name":"7aeaf26c-2c15-449a-949d-1289f93ff95d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_village1_4_road","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cbe8f3c3-d953-44b6-b0dc-d3040132304a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db639732-3835-48cc-b155-89f5f70b2ad8","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"b3b0cfbf-2dbf-4901-9e23-3714cc293523","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7aeaf26c-2c15-449a-949d-1289f93ff95d","path":"sprites/spr_village1_4_road/spr_village1_4_road.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2e1ebd71-b3b9-4d41-a073-a4815c48d090","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"589cab53-b93a-4654-9a48-aa1cd915df28","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
