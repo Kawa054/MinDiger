@@ -39,17 +39,65 @@ with(obj_paththrough_block){
 
 var player_offsetY = -10;
 with(obj_player){
-	draw_sprite_pos(sprite_index, image_index, 
+	if(!obj_player.is_using_pickaxe){
+		draw_sprite_pos(sprite_index, image_index, 
+						x - viewX - sx,
+						y + sprite_height + player_offsetY - viewY - sy,
+						x + sprite_width - viewX - sx,
+						y + sprite_height + player_offsetY - viewY - sy,
+					
+						x + sprite_width - 20 - viewX,
+						y + sprite_height + player_offsetY - viewY,
+						x - viewX + 20,
+						y + sprite_height + player_offsetY - viewY,
+						0.8);
+	}else{
+		if(obj_player.face == RIGHT || obj_player.face == LEFT){
+			var offset_x = 35;
+			var offset_y = 65;
+			draw_sprite_pos(sprite_index, image_index, 
+					x - viewX - sx - offset_x,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
+					x + sprite_width - viewX - sx - offset_x,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
+					
+					x + sprite_width - 20 - viewX - offset_x,
+					y + sprite_height + player_offsetY - viewY - offset_y,
+					x - viewX + 20 - offset_x,
+					y + sprite_height + player_offsetY - viewY - offset_y,
+					0.8);
+					
+		}else if(obj_player.face == UP){
+			//var offset_x = 50;		
+			var offset_y = 80;
+			draw_sprite_pos(sprite_index, image_index, 
 					x - viewX - sx,
-					y + sprite_height + player_offsetY - viewY - sy,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
 					x + sprite_width - viewX - sx,
-					y + sprite_height + player_offsetY - viewY - sy,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
 					
 					x + sprite_width - 20 - viewX,
-					y + sprite_height + player_offsetY - viewY,
+					y + sprite_height + player_offsetY - viewY - offset_y,
 					x - viewX + 20,
-					y + sprite_height + player_offsetY - viewY,
+					y + sprite_height + player_offsetY - viewY - offset_y,
 					0.8);
+					
+		}else{
+			var offset_x = 35;
+			var offset_y = 130;
+			draw_sprite_pos(sprite_index, image_index, 
+					x - viewX - sx - offset_x,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
+					x + sprite_width - viewX - sx - offset_x,
+					y + sprite_height + player_offsetY - viewY - sy - offset_y,
+					
+					x + sprite_width - 20 - viewX - offset_x,
+					y + sprite_height + player_offsetY - viewY - offset_y,
+					x - viewX + 20 - offset_x,
+					y + sprite_height + player_offsetY - viewY - offset_y,
+					0.8);
+		}
+	}
 }
 
 gpu_set_fog(false, c_white, 0, 0);
