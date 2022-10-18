@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "common",
-    "path": "folders/Scripts/common.yy",
+    "name": "blur_effect",
+    "path": "folders/Scripts/common/blur_effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "blur_set",

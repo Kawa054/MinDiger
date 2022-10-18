@@ -17,8 +17,8 @@
   "width": 660,
   "height": 720,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "village1",
+    "path": "texturegroups/village1",
   },
   "swatchColours": null,
   "gridX": 0,

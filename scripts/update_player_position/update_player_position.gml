@@ -52,6 +52,8 @@ function update_player_position(argument0, argument1){
 		}
 		
 		if is_stair(floor(px), floor(py)){
+			global.player_spawn_x = 2882;
+			global.player_spawn_y = 5792;
 			room_goto(rm_game);
 		}
 	}

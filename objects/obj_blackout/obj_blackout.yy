@@ -1,13 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_warp_wall",
-    "path": "sprites/spr_warp_wall/spr_warp_wall.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -22,16 +19,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "road1",
-    "path": "folders/Objects/Block/warp_block/road1.yy",
+    "name": "black_out_effect",
+    "path": "folders/Scripts/common/black_out_effect.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wb_return_village1",
+  "name": "obj_blackout",
   "tags": [],
   "resourceType": "GMObject",
 }

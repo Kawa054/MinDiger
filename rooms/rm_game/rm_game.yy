@@ -13,6 +13,10 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"spriteId":{"name":"spr_loading","path":"sprites/spr_loading/spr_loading.yy",},"colour":16777215,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":-1490,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"loading_screen","tags":[],"resourceType":"GMRBackgroundLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_blackout","path":"objects/obj_blackout/obj_blackout.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2816.0,"y":3904.0,"resourceVersion":"1.0","name":"inst_201533B3","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":-1390,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"effect_blackout","tags":[],"resourceType":"GMRInstanceLayer",},
     {"visible":true,"depth":-1290,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_effect_windblown_particles","properties":[
         {"type":2,"name":"param_sprite","value":"effect_windblown1",},
         {"type":0,"name":"param_num_particles","value":"17",},
@@ -137,7 +141,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.5937495,"scaleY":16.0625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":731.0,"y":3228.0,"resourceVersion":"1.0","name":"inst_5BCBABF2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.6484375,"scaleY":4.4765625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3424.0,"y":7437.0,"resourceVersion":"1.0","name":"inst_69891495","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.78125,"scaleY":15.703125,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3779.0,"y":-52.0,"resourceVersion":"1.0","name":"inst_3C2A1D8A","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_wb_road1","path":"objects/obj_wb_road1/obj_wb_road1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.9375,"scaleY":1.59375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3942.0,"y":7899.0,"resourceVersion":"1.0","name":"inst_21EAFE36","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_wb_road1","path":"objects/obj_wb_road1/obj_wb_road1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.9375,"scaleY":1.59375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3939.0,"y":7896.0,"resourceVersion":"1.0","name":"inst_21EAFE36","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wb_road2","path":"objects/obj_wb_road2/obj_wb_road2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.03125,"scaleY":2.21875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5849.0,"y":0.0,"resourceVersion":"1.0","name":"inst_84186E9","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wb_player_garage","path":"objects/obj_wb_player_garage/obj_wb_player_garage.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.625,"scaleY":1.484375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3269.0,"y":5559.0,"resourceVersion":"1.0","name":"inst_6997D764","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wb_player_house","path":"objects/obj_wb_player_house/obj_wb_player_house.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.890625,"scaleY":2.484375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2521.0,"y":5495.0,"resourceVersion":"1.0","name":"inst_10A5E6D7","tags":[],"resourceType":"GMRInstance",},
@@ -471,6 +475,7 @@
     {"name":"inst_84186E9","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_6997D764","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_10A5E6D7","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_201533B3","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -478,7 +483,7 @@
     "inheritRoomSettings": false,
     "Width": 8000,
     "Height": 8000,
-    "persistent": true,
+    "persistent": false,
   },
   "viewSettings": {
     "inheritViewSettings": false,
