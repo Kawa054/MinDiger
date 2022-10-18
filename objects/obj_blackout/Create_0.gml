@@ -1,0 +1,8 @@
+#macro BLACKOUT_START 0
+#macro BLACKOUT_RETURN 1
+#macro BLACKOUT_DEACTIVATE 2
+#macro BLACKOUT_LOADING 3
+
+mode = BLACKOUT_DEACTIVATE;
+timer = 0;
+finished = false;

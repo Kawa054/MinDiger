@@ -13,5 +13,6 @@ unf_nc_g2 = shader_get_uniform(shd_ground_noise, "NOISE_COLOR_G2");
 unf_nc_b2 = shader_get_uniform(shd_ground_noise, "NOISE_COLOR_B2");
 
 unf = shader_get_uniform(shd_ground_noise, "ppos");
+ns = shader_get_uniform(shd_ground_noise, "noise_size");
 
 application_surface_draw_enable(false); 

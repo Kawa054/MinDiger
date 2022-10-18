@@ -10,7 +10,8 @@ if (surface_exists(application_surface)){
 	shader_set_uniform_f(unf_nc_r2, GRASS_UPPER2_COLOR_R/255.0);
 	shader_set_uniform_f(unf_nc_g2, GRASS_UPPER2_COLOR_G/255.0);
 	shader_set_uniform_f(unf_nc_b2, GRASS_UPPER2_COLOR_B/255.0);
-	shader_set_uniform_f(unf, obj_player.x, obj_player.y);
+	shader_set_uniform_f(ns, 0.70);
+	shader_set_uniform_f(unf, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]));
 	//shader_set_uniform_f(surface_get_width(application_surface), surface_get_height(application_surface));
 }
 
