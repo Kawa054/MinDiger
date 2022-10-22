@@ -6,7 +6,7 @@
     "path": "folders/Objects/Manager/dangeon_manager/dangeon_generator/function/common/init.yy",
   },
   "resourceVersion": "1.0",
-  "name": "set_walls_all",
+  "name": "set_ground_all",
   "tags": [],
   "resourceType": "GMScript",
 }

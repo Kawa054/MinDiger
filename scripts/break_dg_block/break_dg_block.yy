@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "function",
-    "path": "folders/Objects/Manager/dangeon_manager/function.yy",
+    "name": "update",
+    "path": "folders/Objects/Manager/dangeon_manager/dangeon_generator/function/common/update.yy",
   },
   "resourceVersion": "1.0",
   "name": "break_dg_block",

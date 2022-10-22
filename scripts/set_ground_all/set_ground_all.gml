@@ -1,12 +1,12 @@
-function set_walls_all(){
+function set_ground_all(){
 	switch(global.dangeon_type){
 		case DANGEON_TYPE_PLAIN:
-			wall = 16;
-			lay_id = layer_get_id("layer_walls");
+			ground = 18;
+			lay_id = layer_get_id("layer_ground");
 			map_id = layer_tilemap_get_id(lay_id);
 			for(var i = 0; i <= DANGEON_SIZE_Y / 128; i++){
 				for(var j = 0; j <= DANGEON_SIZE_X / 128; j++){
-					tilemap_set(map_id, wall, i, j);
+					tilemap_set(map_id, ground, i, j);
 				}
 			}
 		break;

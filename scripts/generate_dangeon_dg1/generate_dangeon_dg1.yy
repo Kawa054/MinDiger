@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "function",
-    "path": "folders/Objects/Manager/dangeon_manager/function.yy",
+    "name": "dg1",
+    "path": "folders/Objects/Manager/dangeon_manager/dangeon_generator/dg1.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_dg_room",
+  "name": "generate_dangeon_dg1",
   "tags": [],
   "resourceType": "GMScript",
 }

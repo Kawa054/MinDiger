@@ -33,23 +33,51 @@ function update_player_position(argument0, argument1){
 	
 	//ダンジョン内の場合
 	if(room == rm_dangeon){
-		px = (obj_player.x + 64) / 128;
-		py = (obj_player.y + 64) / 128;
-		if is_wall_at_cell(floor(px + x_direction*0.5), floor(py)){
-			//途中で止まらないよう微調整する
-			//while(!is_wall_at(x + x_direction, y)){
-				//x += x_direction;
-			//}
-			xspd = 0;
+		//BB (掘る場合とそうでない場合でバグが発生するため統一)
+		var _left = -40;
+		var _top = 20;
+		var _right = 40;
+		var _bottom = 64;
+		px = (obj_player.x + 64) /128;
+		py = (obj_player.y + 64) /128;
+		
+		if(x_direction < 0){
+			if(is_wall_at(x + 64 + _left + xspd, y + 64 + _top) || is_wall_at(x + 64 + _left + xspd, y + 64 + _bottom)){
+				//while(is_wall_at(x + 64 + _left + x_direction, y + 64 + _top) || is_wall_at(x + 64 + _left + x_direction, y + 64 + _bottom)){
+					//x += x_direction;
+				//}
+				xspd = 0;
+			}
 		}
 		
-		if is_wall_at_cell(floor(px), floor(py + y_direction*0.5)){
-			//途中で止まらないよう微調整する
-			//while(!is_wall_at(px, floor(py + y_direction*0.5))){
-				//y += y_direction;
-			//}
-			yspd = 0;
+		if(x_direction > 0){
+			if(is_wall_at(x + 64 + _right + xspd, y + 64 + _top) || is_wall_at(x + 64 + _right + xspd, y + 64 + _bottom)){
+				//while(is_wall_at(x + 64 + _right + x_direction, y + 64 + _top) || is_wall_at(x + 64 + _right + x_direction, y + 64 + _bottom)){
+					//x += x_direction;
+				//}
+				xspd = 0;
+			}
 		}
+		
+		if(y_direction > 0){
+			if(is_wall_at(x + 64 + _right, y + 64 + _bottom + yspd) || is_wall_at(x + 64 + _left, y + 64 + _bottom + yspd)){
+				//while(is_wall_at(x + 64 + _right, y + 64 + _bottom + y_direction) || is_wall_at(x + 64 + _left, y + 64 + _bottom + y_direction)){
+					//y += y_direction;
+				//}
+				yspd = 0;
+			}
+		}
+		
+		if(y_direction < 0){
+			if(is_wall_at(x + 64 + _right, y + 64 + _top + yspd) || is_wall_at(x + 64 + _left, y + 64 + _top + yspd)){
+				//while(is_wall_at(x + 64 + _right, y + 64 + _top + y_direction) || is_wall_at(x + 64 + _left, y + 64 + _top + y_direction)){
+					//y += y_direction;
+				//}
+				yspd = 0;
+			}
+		}
+		
+		
 		
 		if is_stair(floor(px), floor(py)){
 			global.player_spawn_x = 2882;

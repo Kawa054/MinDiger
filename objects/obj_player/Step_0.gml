@@ -17,8 +17,8 @@ if (mouse_check_button_pressed(mb_left)) {
 	is_using_pickaxe = true;
 	alarm[0] = 20;
 	if(room == rm_dangeon){
-		if is_wall_at_cell(floor(px + x_direction*0.5), floor(py + y_direction*0.5)){
-			break_dg_block(floor(px + x_direction*0.5), floor(py + y_direction*0.5));
+		if is_wall_at_cell(floor(px + x_direction*0.5), floor(py + y_direction*0.7)){
+			break_dg_block(floor(px + x_direction*0.5), floor(py + y_direction*0.7));
 		}
 	}
 } 
