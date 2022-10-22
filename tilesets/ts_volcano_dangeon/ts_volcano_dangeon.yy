@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_plain_dangeon1",
-    "path": "sprites/spr_plain_dangeon1/spr_plain_dangeon1.yy",
+    "name": "spr_volcano_dangeon",
+    "path": "sprites/spr_volcano_dangeon/spr_volcano_dangeon.yy",
   },
   "tileWidth": 128,
   "tileHeight": 128,
@@ -77,10 +77,10 @@
   },
   "parent": {
     "name": "dangeon",
-    "path": "folders/Tile Sets/plain/dangeon.yy",
+    "path": "folders/Tile Sets/dangeon.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ts_plain_dangeon1",
+  "name": "ts_volcano_dangeon",
   "tags": [],
   "resourceType": "GMTileSet",
 }
