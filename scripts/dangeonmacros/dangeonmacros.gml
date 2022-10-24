@@ -35,3 +35,4 @@ global.dangeon_name = "TEST DANGEON 1";
 global.dangeon_floor = 1;
 global.dangeon_type = DANGEON_TYPE_PLAIN;
 global.dangeon_id = DANGEON_ID_PLAIN1;
+global.dangeon_light_alpha = 0.7;
