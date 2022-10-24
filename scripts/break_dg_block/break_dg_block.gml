@@ -10,7 +10,7 @@ function break_dg_block(xcell, ycell){
 	var map_id2 = layer_tilemap_get_id(lay_id);
 	
 	//地面タイルと側面壁の取得
-	var ground = 42;
+	var ground = 50;
 	var wall = 17;
 	
 	//側面壁の場合

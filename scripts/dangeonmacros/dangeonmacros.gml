@@ -31,7 +31,7 @@
 #macro DANGEON_ID_VOLCANO3 33
 #macro DANGEON_ID_VOLCANO4 34
 
-global.dangeon_name = "";
+global.dangeon_name = "TEST DANGEON 1";
 global.dangeon_floor = 1;
 global.dangeon_type = DANGEON_TYPE_PLAIN;
 global.dangeon_id = DANGEON_ID_PLAIN1;

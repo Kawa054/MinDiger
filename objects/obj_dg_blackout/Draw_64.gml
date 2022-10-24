@@ -14,7 +14,8 @@ switch(mode){
 			draw_set_color(c_white);
 			draw_set_font(font_dangeon_load);
 			draw_set_halign(fa_center);
-			draw_text(window_get_width()/2, window_get_height()/2 - 100, "The Dangeon1");
+			draw_text(window_get_width()/2, window_get_height()/2 - 100, global.dangeon_name);
+			draw_text(window_get_width()/2, window_get_height()/2, string(global.dangeon_floor) + "F");
 			
 			//上から塗りつぶし
 			draw_set_colour(c_black);
@@ -44,7 +45,8 @@ switch(mode){
 			draw_set_color(c_white);
 			draw_set_font(font_dangeon_load);
 			draw_set_halign(fa_center);
-			draw_text(window_get_width()/2, window_get_height()/2 - 100, "The Dangeon1");
+			draw_text(window_get_width()/2, window_get_height()/2 - 100, global.dangeon_name);
+			draw_text(window_get_width()/2, window_get_height()/2, string(global.dangeon_floor) + "F");
 			
 	
 			if(timer == BLACKOUT_TIME_DG * 60){
@@ -69,7 +71,8 @@ switch(mode){
 			draw_set_color(c_white);
 			draw_set_font(font_dangeon_load);
 			draw_set_halign(fa_center);
-			draw_text(window_get_width()/2, window_get_height()/2 - 100, "The Dangeon1");
+			draw_text(window_get_width()/2, window_get_height()/2 - 100, global.dangeon_name);
+			draw_text(window_get_width()/2, window_get_height()/2, string(global.dangeon_floor) + "F");
 			
 			draw_set_colour(c_black);
 			draw_set_alpha(timer / (BLACKOUT_TIME_DG*60));
