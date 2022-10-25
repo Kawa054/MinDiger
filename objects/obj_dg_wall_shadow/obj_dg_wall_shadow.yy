@@ -21,16 +21,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":72,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "dangeon_manager",
-    "path": "folders/Objects/Manager/dangeon_manager.yy",
+    "name": "dangeon_light",
+    "path": "folders/Objects/Shader/dangeon_light.yy",
   },
   "resourceVersion": "1.0",
-  "name": "dangeon_manager",
+  "name": "obj_dg_wall_shadow",
   "tags": [],
   "resourceType": "GMObject",
 }

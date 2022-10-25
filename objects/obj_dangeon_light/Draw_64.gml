@@ -14,7 +14,7 @@ if(surface_exists(surface)){
 	
 	//プレイヤーの光を描画
 	with(obj_player){
-		draw_sprite_ext(spr_light, 0, x-viewX-150, y-viewY-200, 0.5, 0.5, 0, c_white, 1);
+		draw_sprite_ext(spr_light, 0, x-viewX-130, y-viewY-180, 0.5, 0.5, 0, c_white, 1);
 	}
 	
 	gpu_set_blendmode(bm_normal);
@@ -30,7 +30,7 @@ if(surface_exists(surface)){
 	surface_set_target(surface);
 	draw_set_color(c_black);
 	draw_set_alpha(global.dangeon_light_alpha);
-	draw_rectangle(0, 0, viewW, viewH, 0);
+	draw_rectangle(0, 0, window_get_width(), window_get_height(), 0);
 	
 	surface_reset_target();
 }

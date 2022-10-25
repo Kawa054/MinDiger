@@ -3,6 +3,8 @@ xspd = 0;
 yspd = 0;
 move_spd = 10;
 
+player_health = PLAYER_HEALTH_MAX-2.5;
+
 //会話などのアクション有効範囲
 action_width = 40;
 action_height = 40;

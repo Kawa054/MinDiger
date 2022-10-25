@@ -26,9 +26,9 @@ switch(mode){
 			if(timer == BLACKOUT_TIME_DG * 60){
 				set_dg_blackout(BLACKOUT_DG_SHOW);
 				finished = false;
-				global.active_draw_gui1 = true;
-				global.active_operate = true;
-				global.active_press_gui1 = true;
+				global.active_draw_gui1 = false;
+				global.active_operate = false;
+				global.active_press_gui1 = false;
 			}
 		}
 	break;
@@ -52,9 +52,9 @@ switch(mode){
 			if(timer == BLACKOUT_TIME_DG * 60){
 				set_dg_blackout(BLACKOUT_DG_RETURN1);
 				finished = false;
-				global.active_draw_gui1 = true;
-				global.active_operate = true;
-				global.active_press_gui1 = true;
+				global.active_draw_gui1 = false;
+				global.active_operate = false;
+				global.active_press_gui1 = false;
 			}
 		}
 	break;
@@ -84,7 +84,7 @@ switch(mode){
 				//操作ができないようにする
 				set_dg_blackout(BLACKOUT_DG_START2);
 				finished = true;
-				global.active_draw_gui1 = false;
+				global.active_draw_gui1 = true;
 				global.active_operate = false;
 				global.active_press_gui1 = false;
 			}

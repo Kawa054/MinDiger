@@ -10,3 +10,7 @@
 mode = BLACKOUT_DG_DEACTIVATE;
 timer = 0;
 finished = false;
+
+global.active_draw_gui1 = false;
+global.active_operate = false;
+global.active_press_gui1 = false;

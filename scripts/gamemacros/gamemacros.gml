@@ -29,5 +29,12 @@ global.button_hovering_active = true;
 #macro POPUP_ID_GAME_FREE 11
 #macro POPUP_ID_GAME_CHALLENGE 12
 
+#macro PLAYER_HEALTH_MAX 5
+#macro UPDATE_GRID_SIZE_X 5
+#macro UPDATE_GRID_SIZE_Y 5
+
+#macro WALL_SHADOW_UPDATE_X 15
+#macro WALL_SHADOW_UPDATE_Y 15
+
 
 var str ="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉっゃゅょアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポァィゥェォッャュョヴ、。ー～「」【】『』゛゜♪♭■□◆◇△▲▽▼◎○●◯‥…・∴∵※×〒!”#$%&'()=~|`{+*}<>?_-^\@[;:],./\！”＃＄％＆’（）＝~｜｀｛＋＊｝＜＞？＿－＾\＠［；：］，．／\abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９";
