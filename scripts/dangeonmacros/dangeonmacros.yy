@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "function",
-    "path": "folders/Objects/Manager/dangeon_manager/function.yy",
+    "name": "macro",
+    "path": "folders/Objects/Manager/dangeon_manager/dangeon_generator/function/macro.yy",
   },
   "resourceVersion": "1.0",
-  "name": "create_dg_room",
+  "name": "DangeonMacros",
   "tags": [],
   "resourceType": "GMScript",
 }

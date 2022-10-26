@@ -13,16 +13,6 @@ global.button_hovering_active = true;
 #macro SAVEDATA_DIR "SaveData/data"
 #macro SAVEDATA_DATAFILE "/savedata.json"
 
-#macro DANGEON_SIZE_X 12800
-#macro DANGEON_SIZE_Y 12800
-
-
-#macro dangeon_start_x 15
-#macro dangeon_start_y 11
-#macro dangeon_end_x 88
-#macro dangeon_end_y 88
-
-
 #macro SETTINGS_STATE_GENERAL 0
 #macro SETTINGS_STATE_KEY 1
 #macro SETTINGS_STATE_VIDEO 2
@@ -38,6 +28,13 @@ global.button_hovering_active = true;
 #macro POPUP_ID_GAME_STORY 10
 #macro POPUP_ID_GAME_FREE 11
 #macro POPUP_ID_GAME_CHALLENGE 12
+
+#macro PLAYER_HEALTH_MAX 5
+#macro UPDATE_GRID_SIZE_X 5
+#macro UPDATE_GRID_SIZE_Y 5
+
+#macro WALL_SHADOW_UPDATE_X 15
+#macro WALL_SHADOW_UPDATE_Y 15
 
 
 var str ="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉっゃゅょアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポァィゥェォッャュョヴ、。ー～「」【】『』゛゜♪♭■□◆◇△▲▽▼◎○●◯‥…・∴∵※×〒!”#$%&'()=~|`{+*}<>?_-^\@[;:],./\！”＃＄％＆’（）＝~｜｀｛＋＊｝＜＞？＿－＾\＠［；：］，．／\abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９";

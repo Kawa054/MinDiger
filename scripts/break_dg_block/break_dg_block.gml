@@ -1,14 +1,17 @@
 function break_dg_block(xcell, ycell){
 	//壊すタイルのINDEXを取得
-	var lay_id = layer_get_id("layer_ground");
+	var lay_id = layer_get_id("layer_walls");
 	var map_id = layer_tilemap_get_id(lay_id);
 	var tile_data  = tilemap_get(map_id, xcell, ycell);
 	var tile_index = tile_get_index(tile_data);
 	
+	//模様用
+	var lay_id = layer_get_id("layer_walls_pattern");
+	var map_id2 = layer_tilemap_get_id(lay_id);
+	
 	//地面タイルと側面壁の取得
-	var map_id2 = layer_tilemap_get_id(layer_get_id("TileData"));
-	var ground = tilemap_get(map_id2, 3, 0);
-	var wall = tilemap_get(map_id2, 1, 0);
+	var ground = 0;
+	var wall = 17;
 	
 	//側面壁の場合
 	if(is_sidewall(tile_index)){
@@ -17,10 +20,16 @@ function break_dg_block(xcell, ycell){
 			//Y-2が壁の場合
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, wall, xcell, ycell - 1);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell - 1);
 		}else{
 			//Y-2が地面の場合
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell - 1);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell - 1);
 		}
 	}
 	
@@ -45,38 +54,67 @@ function break_dg_block(xcell, ycell){
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell - 1);
 			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell - 1);
+			
 		}else if(data[0] && data[1] && data[2] && data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, wall, xcell, ycell - 1);
 			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell - 1);
+			
 		}else if(!data[0] && !data[1] && data[2] && data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
 			
 		}else if(data[0] && data[1] && data[2] && !data[3]){
 			tilemap_set(map_id, wall, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell + 1);
 			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell + 1);
+			
 		}else if(data[0] && data[1] && !data[2] && !data[3]){
 			tilemap_set(map_id, wall, xcell, ycell);
 			tilemap_set(map_id, wall, xcell, ycell + 1);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell + 1);
+			
 		}else if(!data[0] && data[1] && data[2] && !data[3]){
 			tilemap_set(map_id, wall, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell + 1);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell + 1);
 			
 		}else if(!data[0] && !data[1] && data[2] && !data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell + 1);
 			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell + 1);
+			
 		}else if(!data[0] && data[1] && !data[2] && !data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell - 1);
 			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell - 1);
+			
 		}else if(data[0] && !data[1] && data[2] && data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
 			
 		}else if(data[0] && !data[1] && data[2] && !data[3]){
 			tilemap_set(map_id, ground, xcell, ycell);
 			tilemap_set(map_id, ground, xcell, ycell + 1);
+			
+			tilemap_set(map_id2, ground, xcell, ycell);
+			tilemap_set(map_id2, ground, xcell, ycell + 1);
 		}
 	}
 	
