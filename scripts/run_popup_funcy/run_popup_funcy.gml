@@ -27,5 +27,13 @@ function run_popup_funcY(popup_id){
 		case POPUP_ID_HOME:
 			back_from_modeselect();
 		break;
+		
+		case POPUP_ID_DANGEON_EXIT:
+			show_debug_message("test");
+		break;
+		
+		case POPUP_ID_DANGEON_GAME_EXIT:
+			game_end();
+		break;
 	}
 }

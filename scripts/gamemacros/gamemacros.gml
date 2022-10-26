@@ -29,6 +29,9 @@ global.button_hovering_active = true;
 #macro POPUP_ID_GAME_FREE 11
 #macro POPUP_ID_GAME_CHALLENGE 12
 
+#macro POPUP_ID_DANGEON_EXIT 21
+#macro POPUP_ID_DANGEON_GAME_EXIT 22
+
 #macro PLAYER_HEALTH_MAX 5
 #macro UPDATE_GRID_SIZE_X 5
 #macro UPDATE_GRID_SIZE_Y 5

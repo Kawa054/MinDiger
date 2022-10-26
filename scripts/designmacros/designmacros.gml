@@ -112,6 +112,34 @@
 #macro SETTINGS_NON_SELECTED_COLOR_G 199 //未選択の設定群の背景色(G)
 #macro SETTINGS_NON_SELECTED_COLOR_B 160 //未選択の設定群の背景色(B)
 
+// ------------ ゲーム中のESCキーでのウィンドウ ---------------//
+#macro ESC_WINDOW_WIDTH 900
+#macro ESC_WINDOW_HEIGHT 700
+#macro ESC_BACKBUTTON_SIZE 75
+#macro ESC_BUTTON_WIDTH 700
+#macro ESC_BUTTON_HEIGHT 100
+
+#macro ESC_BUTTON_COLOR_R 100
+#macro ESC_BUTTON_COLOR_G 100
+#macro ESC_BUTTON_COLOR_B 100
+
+#macro ESC_BUTTON2_COLOR_R 255
+#macro ESC_BUTTON2_COLOR_G 128
+#macro ESC_BUTTON2_COLOR_B 128
+
+#macro ESC_BUTTON_OL_SIZE 1
+#macro ESC_BUTTON_OL_COLOR_R 40
+#macro ESC_BUTTON_OL_COLOR_G 40
+#macro ESC_BUTTON_OL_COLOR_B 40
+
+#macro ESC_WINDOW_COLOR_R 255 //背景色(R)
+#macro ESC_WINDOW_COLOR_G 234 //背景色(G)
+#macro ESC_WINDOW_COLOR_B 200 //背景色(B)
+
+#macro ESC_WINDOW_OL_COLOR_R 156 //輪郭色(R)
+#macro ESC_WINDOW_OL_COLOR_G 133 //輪郭色(G)
+#macro ESC_WINDOW_OL_COLOR_B 106 //輪郭色(B)
+
 //------------- 会話ボックスの色設定 --------------//
 
 //会話ボックスの会話文の色
