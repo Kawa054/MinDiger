@@ -1,13 +1,17 @@
 if(global.active_draw_gui1){
 	//mapの描画
-	draw_sprite_ext(spr_map, 0, 0, 0, 2, 2, 0, c_white, 1);
-	var map_x = 90;
-	var map_y = 60;
+	draw_sprite_ext(spr_map, 0, 0, 0, 1, 1, 0, c_white, 1);
+	var map_x = 77;
+	var map_y = 62;
 	for(var i = 0; i < DANGEON_SIZE_X/128; i++){
 		for(var j = 0; j < DANGEON_SIZE_X/128; j++){
 			data = ds_grid_get(dangeon_manager.dangeon_info, i, j);
 			draw_set_color(data);
-			draw_rectangle(map_x + 3*i, map_y + 3*j, map_x + 3*(i+1), map_y + 3*(j+1), false);
+			if(data == -1){
+				//draw_set_alpha(0);
+			}else{
+				draw_rectangle(map_x + 3*i, map_y + 3*j, map_x + 3*(i+1), map_y + 3*(j+1), false);
+			}
 		}
 	}
 	
