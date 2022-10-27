@@ -87,11 +87,17 @@
 #macro POPUP_NAMEINPUT_HEIGHT 800 //ポップアップウィンドウのY方向サイズ
 
 
-
 //------------- モード画面の設定 -------------//
 #macro MODE_SELECT_Y 200 //モード選択UIのY座標
 #macro MODE_SELECT_SEP_X 40 //モード選択UIの横間隔
 #macro MODE_SELECT_NAMEBAND_MARGIN_Y 0 //モードの名前の帯の縦方向マージン
+
+
+//------------- フリーモードの設定 -------------//
+#macro MODE_FREE_DGDATA_WIDTH 1400
+#macro MODE_FREE_DGDATA_HEIGHT 900
+#macro MODE_FREE_SELECT_ITEMMENU_WIDTH 1400
+#macro MODE_FREE_SELECT_ITEMMENU_HEIGHT 700
 
 //------------- 設定画面の設定 -----------------//
 #macro SETTINGS_MENU_WIDTH 1400 //設定ウィンドウの横幅

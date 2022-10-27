@@ -11,6 +11,7 @@
 #macro dangeon_end_x 88
 #macro dangeon_end_y 88
 
+#macro DANGEON_NUM 12 //(-1する)
 #macro DANGEON_ID_PLAIN1 1
 #macro DANGEON_ID_PLAIN2 2
 #macro DANGEON_ID_PLAIN3 3
