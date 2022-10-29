@@ -66,7 +66,7 @@ activate_button = function()
 		exit;
 	}
 	
-	if(room == rm_freemode){
+	if(room == rm_freemode || room == rm_challengemode){
 		create_popup(POPUP_ID_FREE_EXIT, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_YN,  ["", "モード選択画面へ戻りますか？"], [
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)

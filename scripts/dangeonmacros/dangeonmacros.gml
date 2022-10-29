@@ -29,6 +29,11 @@
 #macro DANGEON_ID_VOLCANO2 32
 #macro DANGEON_ID_VOLCANO3 33
 
+#macro DANGEON_CHALLENGE_NUM 2 //(-1する)
+#macro DANGEON_ID_CHALLENGE1 100
+#macro DANGEON_ID_CHALLENGE2 101
+#macro DANGEON_ID_CHALLENGE3 102
+
 global.dangeon_name = "TEST DANGEON 1";
 global.dangeon_floor = 1;
 global.dangeon_max_floor = 1;

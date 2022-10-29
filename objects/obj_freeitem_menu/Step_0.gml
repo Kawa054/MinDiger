@@ -24,13 +24,13 @@ if(global.button_hovering_active){
 		break;
 		
 		case FREEITEM_MENU_STATE_ITEMS:
-			if (point_in_rectangle(mouseX, mouseY, x + 100, y + 40, x + 100 + 120, y + 40 + 120)){ item_id_hover = ITEM_ID_TORCH; }
-			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 40, x + 450 + 120, y + 40 + 120)){ item_id_hover = ITEM_ID_YARI1; }	
-			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 40, x + 800 + 120, y + 40 + 120)){ item_id_hover = ITEM_ID_PORTION1; }
-			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 180, x + 450 + 120, y + 180 + 120)){ item_id_hover = ITEM_ID_YARI2; }	
-			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 180, x + 800 + 120, y + 180 + 120)){ item_id_hover = ITEM_ID_PORTION2; }
-			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 320, x + 450 + 120, y + 320 + 120)){ item_id_hover = ITEM_ID_YARI3; }	
-			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 320, x + 800 + 120, y + 320 + 120)){ item_id_hover = ITEM_ID_PORTION3; }
+			if (point_in_rectangle(mouseX, mouseY, x + 100, y + 40, x + 100 + 210, y + 40 + 120)){ item_id_hover = ITEM_ID_TORCH; }
+			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 40, x + 450 + 210, y + 40 + 120)){ item_id_hover = ITEM_ID_YARI1; }	
+			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 40, x + 800 + 210, y + 40 + 120)){ item_id_hover = ITEM_ID_PORTION1; }
+			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 180, x + 450 + 210, y + 180 + 120)){ item_id_hover = ITEM_ID_YARI2; }	
+			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 180, x + 800 + 210, y + 180 + 120)){ item_id_hover = ITEM_ID_PORTION2; }
+			if (point_in_rectangle(mouseX, mouseY, x + 450, y + 320, x + 450 + 210, y + 320 + 120)){ item_id_hover = ITEM_ID_YARI3; }	
+			if (point_in_rectangle(mouseX, mouseY, x + 800, y + 320, x + 800 + 210, y + 320 + 120)){ item_id_hover = ITEM_ID_PORTION3; }
 			
 			if (point_in_rectangle(mouseX, mouseY, x + 350, y + 580, x + 350 + 40, y + 580 + 40)){ plus_hover = 0; }	
 			if (point_in_rectangle(mouseX, mouseY, x + 300, y + 580, x + 300 + 40, y + 580 + 40)){ minus_hover = 0; }

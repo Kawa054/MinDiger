@@ -24,6 +24,20 @@ function run_popup_funcY(popup_id){
 			global.button_hovering_active = false;
 		break;
 		
+		case POPUP_ID_GAME_FREE:
+			blur_reset();
+			rm_modeselect_manager.start_game = true;
+			rm_modeselect_manager.next_room = rm_freemode;
+			global.button_hovering_active = false;
+		break;
+		
+		case POPUP_ID_GAME_CHALLENGE:
+			blur_reset();
+			rm_modeselect_manager.start_game = true;
+			rm_modeselect_manager.next_room = rm_challengemode;
+			global.button_hovering_active = false;
+		break;
+		
 		case POPUP_ID_HOME:
 			back_from_modeselect();
 		break;
