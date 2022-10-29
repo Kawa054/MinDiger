@@ -1,6 +1,7 @@
 //外枠の描画
 draw_sprite_ext(spr_dgselect_bg_fill, 0, x+10, y+10, 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_dgselect_bg, 0, x, y, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_dgselect_bg, 0, x, y, 1, 1, 0, make_color_rgb(230, 230, 230), hover*(DATA_SELECT_BUTTON_MARGE_AMOUNT+0.2));
 
 //ダンジョンタイトルの描画
 draw_set_font(font_esc_button);

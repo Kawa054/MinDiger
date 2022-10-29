@@ -18,6 +18,9 @@ global.button_hovering_active = true;
 #macro SETTINGS_STATE_VIDEO 2
 #macro SETTINGS_STATE_AUDIO 3
 
+#macro FREEITEM_MENU_STATE_PICKAXE 0
+#macro FREEITEM_MENU_STATE_HP 1
+#macro FREEITEM_MENU_STATE_ITEMS 2
 
 #macro POPUP_ID_EXIT 0
 #macro POPUP_ID_COPY 1
@@ -25,9 +28,13 @@ global.button_hovering_active = true;
 #macro POPUP_ID_PLUS 3
 #macro POPUP_ID_HOME 4
 
-#macro POPUP_ID_GAME_STORY 10
-#macro POPUP_ID_GAME_FREE 11
-#macro POPUP_ID_GAME_CHALLENGE 12
+#macro POPUP_ID_GAME_STORY 100
+
+#macro POPUP_ID_GAME_FREE 110
+#macro POPUP_ID_FREE_EXIT 111
+#macro POPUP_ID_FREE_CONFIRM 112
+
+#macro POPUP_ID_GAME_CHALLENGE 120
 
 #macro POPUP_ID_DANGEON_EXIT 21
 #macro POPUP_ID_DANGEON_GAME_EXIT 22
@@ -39,5 +46,16 @@ global.button_hovering_active = true;
 #macro WALL_SHADOW_UPDATE_X 15
 #macro WALL_SHADOW_UPDATE_Y 15
 
+#macro ITEM_PICKAXE_NORMAL 0
+#macro ITEM_PICKAXE_ATTACK 1
+#macro ITEM_PICKAXE_SPEED 2
+
+#macro ITEM_ID_TORCH 0
+#macro ITEM_ID_YARI1 1
+#macro ITEM_ID_PORTION1 2
+#macro ITEM_ID_YARI2 4
+#macro ITEM_ID_PORTION2 5
+#macro ITEM_ID_YARI3 7
+#macro ITEM_ID_PORTION3 8
 
 var str ="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉっゃゅょアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポァィゥェォッャュョヴ、。ー～「」【】『』゛゜♪♭■□◆◇△▲▽▼◎○●◯‥…・∴∵※×〒!”#$%&'()=~|`{+*}<>?_-^\@[;:],./\！”＃＄％＆’（）＝~｜｀｛＋＊｝＜＞？＿－＾\＠［；：］，．／\abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ０１２３４５６７８９";

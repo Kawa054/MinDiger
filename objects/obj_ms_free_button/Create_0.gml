@@ -5,7 +5,12 @@ hover = 0;
 //クリックされたときの処理
 activate_button = function() 
 {
-	create_popup(POPUP_ID_GAME_FREE, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_Y, ["現在このモードでは遊べません", "アップデートをお待ちください"], [
+	//create_popup(POPUP_ID_GAME_FREE, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_Y, ["現在このモードでは遊べません", "アップデートをお待ちください"], [
+		//make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
+		//make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
+	//]);
+	
+	create_popup(POPUP_ID_GAME_STORY, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_YN,  ["", "ストーリーモードで遊びますか？"], [
 		make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
 		make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 	]);

@@ -96,8 +96,12 @@
 //------------- フリーモードの設定 -------------//
 #macro MODE_FREE_DGDATA_WIDTH 1400
 #macro MODE_FREE_DGDATA_HEIGHT 900
-#macro MODE_FREE_SELECT_ITEMMENU_WIDTH 1400
+
+#macro MODE_FREE_SELECT_ITEMMENU_WIDTH 1200
 #macro MODE_FREE_SELECT_ITEMMENU_HEIGHT 700
+#macro MODE_FREE_SELECT_ITEMMENU_UPPER_HEIGHT 80 //設定ウィンドウの項目(設定群の選択部分)の縦幅
+#macro MODE_FREE_SELECT_ITEMMENU_UPPER_MARGIN 4 //設定群の間隔
+
 
 //------------- 設定画面の設定 -----------------//
 #macro SETTINGS_MENU_WIDTH 1400 //設定ウィンドウの横幅

@@ -28,6 +28,14 @@ function run_popup_funcY(popup_id){
 			back_from_modeselect();
 		break;
 		
+		case POPUP_ID_FREE_EXIT:
+			room_goto(rm_mode_select);
+		break;
+		
+		case POPUP_ID_FREE_CONFIRM:
+			room_goto(rm_dangeon);
+		break;
+		
 		case POPUP_ID_DANGEON_EXIT:
 			show_debug_message("test");
 		break;

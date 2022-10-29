@@ -39,4 +39,8 @@ if(global.active_draw_gui1){
 
 	//持ち物の描画
 	draw_sprite(spr_itemholder, 0, window_get_width() - sprite_get_width(spr_itemholder), window_get_height() - sprite_get_height(spr_itemholder));
+	//メインアイテム
+	//draw_sprite_ext(icon_item_turuhashi, 0, window_get_width() - sprite_get_width(spr_itemholder), window_get_height() - sprite_get_height(spr_itemholder));
+	//サブアイテム
+	//draw_sprite_ext(icon_item_turuhashi, 0, window_get_width() - sprite_get_width(spr_itemholder), window_get_height() - sprite_get_height(spr_itemholder));
 }
