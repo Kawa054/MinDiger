@@ -10,6 +10,11 @@ if (point_in_rectangle(mouseX, mouseY, x + 3*(upper_width + SETTINGS_MENU_UPPER_
 decide_hover = -1;
 if (point_in_rectangle(mouseX, mouseY, x + width - sprite_get_width(icon_decide), y + height + 30, x + width, y + height + 30 + sprite_get_height(icon_decide))){ decide_hover = 0; }
 
+if(room != rm_start && room != rm_mode_select){
+	back_hover = -1;
+	if (point_in_rectangle(mouseX, mouseY, BACK_BUTTON_X, BACK_BUTTON_Y, BACK_BUTTON_X + sprite_get_width(icon_backbutton), BACK_BUTTON_Y + sprite_get_height(icon_backbutton))){ back_hover = 0; }
+}
+
 switch(state){
 	case SETTINGS_STATE_VIDEO:
 		on_off_hover = -1;
@@ -36,23 +41,23 @@ switch(state){
 		
 			switch(change){
 				case 0:
-					setting_key_W = message;
+					setting_key_W = string_upper(message);
 				break;
 		
 				case 1:
-					setting_key_D = message;
+					setting_key_D = string_upper(message);
 				break;
 		
 				case 2:
-					setting_key_A = message;
+					setting_key_A = string_upper(message);
 				break;
 		
 				case 3:
-					setting_key_S = message;
+					setting_key_S = string_upper(message);
 				break;
 		
 				case 4:
-					setting_key_talk = message;
+					setting_key_talk = string_upper(message);
 				break;
 			}
 		}
@@ -84,6 +89,11 @@ if (state >= 0 && mouse_check_button_pressed(mb_left)) {
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);
+	}
+	
+	if(back_hover >= 0){
+		global.button_hovering_active = true;
+		instance_deactivate_object(id);
 	}
 	
 	switch(state){

@@ -1,7 +1,9 @@
 switch(hover_state){
 		//設定ウィンドウの描画
 		case 0:
-				
+			global.button_hovering_active = false;
+			instance_activate_object(obj_setting_menu);
+			instance_activate_object(obj_backbutton);
 		break;
 		
 		case 1:
@@ -19,6 +21,7 @@ switch(hover_state){
 		break;
 		
 		case 3:
+			global.active_operate = true;
 			instance_deactivate_object(id);
 		break;
 	}

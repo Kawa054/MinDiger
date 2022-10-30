@@ -15,6 +15,8 @@ change_hover = -1;
 volume_1_hover = -1;
 volume_2_hover = -1;
 
+back_hover = -1;
+
 message = "";
 cursor = "|";
 delay = 20;

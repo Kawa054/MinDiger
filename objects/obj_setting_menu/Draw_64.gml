@@ -1,3 +1,20 @@
+draw_set_font(font_main);
+
+//背景を暗くする
+var color = c_black;
+draw_set_color(color);
+draw_set_alpha(0.6);
+draw_rectangle(0, 0, window_get_width(), window_get_height(), false);
+draw_set_alpha(1);
+
+if(room != rm_start && room != rm_mode_select){
+	if(back_hover == -1){
+		draw_sprite(icon_backbutton, 0, BACK_BUTTON_X, BACK_BUTTON_Y);
+	}else{
+		draw_sprite(icon_backbutton_hover, 0, BACK_BUTTON_X, BACK_BUTTON_Y);
+	}
+}
+
 //全体の描画
 var color = make_colour_rgb(SETTINGS_BACKGROUND_COLOR_R, SETTINGS_BACKGROUND_COLOR_G, SETTINGS_BACKGROUND_COLOR_B);
 draw_set_color(color);

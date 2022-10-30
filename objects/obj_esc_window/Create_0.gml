@@ -9,3 +9,6 @@ hover = 0;
 hovering = 0;
 hover_state = -1;
 clicked = false;
+
+instance_deactivate_object(obj_setting_menu);
+instance_deactivate_object(obj_backbutton);

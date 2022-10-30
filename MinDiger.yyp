@@ -482,9 +482,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_freemode","path":"rooms/rm_freemode/rm_freemode.yy",},},
     {"roomId":{"name":"rm_dangeon","path":"rooms/rm_dangeon/rm_dangeon.yy",},},
-    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_road2","path":"rooms/rm_road2/rm_road2.yy",},},
     {"roomId":{"name":"rm_player_garage","path":"rooms/rm_player_garage/rm_player_garage.yy",},},
