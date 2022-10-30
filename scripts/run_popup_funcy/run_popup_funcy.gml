@@ -18,6 +18,10 @@ function run_popup_funcY(popup_id){
 			]);
 		break;
 		
+		case POPUP_ID_SETTING_CONFIRM:
+			save_settings(global.selected_data_index);
+		break;
+				
 		case POPUP_ID_GAME_STORY:
 			blur_reset();
 			rm_modeselect_manager.start_game = true;

@@ -27,6 +27,8 @@ global.button_hovering_active = true;
 #macro POPUP_ID_DELETE 2
 #macro POPUP_ID_PLUS 3
 #macro POPUP_ID_HOME 4
+#macro POPUP_ID_SETTING_CONFIRM 5
+
 
 #macro POPUP_ID_GAME_STORY 100
 //#macro POPUP_ID_STORY_EXIT 101

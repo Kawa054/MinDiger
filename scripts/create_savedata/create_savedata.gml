@@ -11,7 +11,20 @@ function create_savedata(){
 				map[? "data_exist"] = 0;
 				map[? "player_name"] = "";
 				map[? "player_playtime"] = "00:00:00";
+				
+				map[? "setting_key_W"] = "w";
+				map[? "setting_key_A"] = "a";
+				map[? "setting_key_S"] = "s";
+				map[? "setting_key_D"] = "d";
+				map[? "setting_key_talk"] = "t";
+	
+				map[? "setting_video_hideUI"] = 1;
+				map[? "setting_video_hideKeyNavigation"] = 1;
+				map[? "setting_video_hideESCNavigation"] = 0;
 
+				map[? "setting_volume_main"] = 50;
+				map[? "setting_volume_sfx"] = 50;
+				
 				// JSON文字列に変換
 				var str = json_encode(map);
 
