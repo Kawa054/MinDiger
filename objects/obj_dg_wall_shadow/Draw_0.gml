@@ -14,7 +14,7 @@ with(obj_player){
 	for(var i = -sx; i <= sx; i++){
 		for(var j = -sy; j <= sy; j++){
 			if(ds_grid_get(dangeon_manager.wall_shadow_grid, sx+i, sy+j) == 1){
-				draw_sprite_ext(spr_wall_shadow, 0, px*128+i*128-11, py*128+j*128-6, 1, 1, 0, c_white, 0.8);
+				draw_sprite_ext(spr_wall_shadow, 0, px*128+i*128-11, py*128+j*128-6, 1, 1, 0, c_black, 2);
 			}
 		}
 	}

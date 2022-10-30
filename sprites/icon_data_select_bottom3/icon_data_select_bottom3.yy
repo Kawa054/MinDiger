@@ -9,8 +9,8 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_top": 3,
+  "bbox_bottom": 29,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cbd6495f-2c0f-4f48-90c1-2ea3ec1b24dc","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cbd6495f-2c0f-4f48-90c1-2ea3ec1b24dc","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"LayerId":{"name":"3792fd78-6110-43a8-95ec-a684781de542","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"icon_data_select_bottom3","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","name":"cbd6495f-2c0f-4f48-90c1-2ea3ec1b24dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3822aa87-d4a9-4a85-a233-4cf40c4f606b","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3822aa87-d4a9-4a85-a233-4cf40c4f606b","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"LayerId":{"name":"02e2ef94-97aa-47b4-9855-c041ede55699","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"icon_data_select_bottom3","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","name":"3822aa87-d4a9-4a85-a233-4cf40c4f606b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"icon_data_select_bottom3","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"57e27602-2189-4a74-bec9-bd7d17dcbd64","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cbd6495f-2c0f-4f48-90c1-2ea3ec1b24dc","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"d78fbae7-38bd-4d60-a15b-66feeb9577ff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3822aa87-d4a9-4a85-a233-4cf40c4f606b","path":"sprites/icon_data_select_bottom3/icon_data_select_bottom3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3792fd78-6110-43a8-95ec-a684781de542","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"02e2ef94-97aa-47b4-9855-c041ede55699","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Icon",
-    "path": "folders/Sprites/UI/Icon.yy",
+    "name": "story_clear",
+    "path": "folders/Sprites/UI/Icon/story_clear.yy",
   },
   "resourceVersion": "1.0",
   "name": "icon_data_select_bottom3",

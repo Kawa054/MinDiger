@@ -46,9 +46,7 @@ activate_button = function()
 			break;
 		}
 		exit;
-	}
-	
-	if(room == rm_mode_select){
+	}else if(room == rm_mode_select){
 		//設定が開いていたら
 		if(rm_modeselect_manager.is_setting_opening){
 			instance_deactivate_object(obj_setting_menu);
@@ -63,6 +61,18 @@ activate_button = function()
 			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
 		]);
 		
+		exit;
+	}else if(room == rm_freemode || room == rm_challengemode){
+		create_popup(POPUP_ID_FREE_EXIT, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_YN,  ["", "モード選択画面へ戻りますか？"], [
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
+			make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)
+		]);
+		
+		exit;
+	}else{
+		instance_deactivate_object(obj_setting_menu);
+		instance_deactivate_object(id);
+		global.button_hovering_active = false;
 		exit;
 	}
 }

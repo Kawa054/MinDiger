@@ -87,11 +87,21 @@
 #macro POPUP_NAMEINPUT_HEIGHT 800 //ポップアップウィンドウのY方向サイズ
 
 
-
 //------------- モード画面の設定 -------------//
 #macro MODE_SELECT_Y 200 //モード選択UIのY座標
 #macro MODE_SELECT_SEP_X 40 //モード選択UIの横間隔
 #macro MODE_SELECT_NAMEBAND_MARGIN_Y 0 //モードの名前の帯の縦方向マージン
+
+
+//------------- フリーモードの設定 -------------//
+#macro MODE_FREE_DGDATA_WIDTH 1400
+#macro MODE_FREE_DGDATA_HEIGHT 900
+
+#macro MODE_FREE_SELECT_ITEMMENU_WIDTH 1200
+#macro MODE_FREE_SELECT_ITEMMENU_HEIGHT 700
+#macro MODE_FREE_SELECT_ITEMMENU_UPPER_HEIGHT 80 //設定ウィンドウの項目(設定群の選択部分)の縦幅
+#macro MODE_FREE_SELECT_ITEMMENU_UPPER_MARGIN 4 //設定群の間隔
+
 
 //------------- 設定画面の設定 -----------------//
 #macro SETTINGS_MENU_WIDTH 1400 //設定ウィンドウの横幅
@@ -111,6 +121,34 @@
 #macro SETTINGS_NON_SELECTED_COLOR_R 232 //未選択の設定群の背景色(R)
 #macro SETTINGS_NON_SELECTED_COLOR_G 199 //未選択の設定群の背景色(G)
 #macro SETTINGS_NON_SELECTED_COLOR_B 160 //未選択の設定群の背景色(B)
+
+// ------------ ゲーム中のESCキーでのウィンドウ ---------------//
+#macro ESC_WINDOW_WIDTH 900
+#macro ESC_WINDOW_HEIGHT 700
+#macro ESC_BACKBUTTON_SIZE 75
+#macro ESC_BUTTON_WIDTH 700
+#macro ESC_BUTTON_HEIGHT 100
+
+#macro ESC_BUTTON_COLOR_R 100
+#macro ESC_BUTTON_COLOR_G 100
+#macro ESC_BUTTON_COLOR_B 100
+
+#macro ESC_BUTTON2_COLOR_R 255
+#macro ESC_BUTTON2_COLOR_G 128
+#macro ESC_BUTTON2_COLOR_B 128
+
+#macro ESC_BUTTON_OL_SIZE 1
+#macro ESC_BUTTON_OL_COLOR_R 40
+#macro ESC_BUTTON_OL_COLOR_G 40
+#macro ESC_BUTTON_OL_COLOR_B 40
+
+#macro ESC_WINDOW_COLOR_R 255 //背景色(R)
+#macro ESC_WINDOW_COLOR_G 234 //背景色(G)
+#macro ESC_WINDOW_COLOR_B 200 //背景色(B)
+
+#macro ESC_WINDOW_OL_COLOR_R 156 //輪郭色(R)
+#macro ESC_WINDOW_OL_COLOR_G 133 //輪郭色(G)
+#macro ESC_WINDOW_OL_COLOR_B 106 //輪郭色(B)
 
 //------------- 会話ボックスの色設定 --------------//
 

@@ -11,6 +11,7 @@
 #macro dangeon_end_x 88
 #macro dangeon_end_y 88
 
+#macro DANGEON_NUM 12 //(-1する)
 #macro DANGEON_ID_PLAIN1 1
 #macro DANGEON_ID_PLAIN2 2
 #macro DANGEON_ID_PLAIN3 3
@@ -19,20 +20,23 @@
 #macro DANGEON_ID_DESERT1 10
 #macro DANGEON_ID_DESERT2 12
 #macro DANGEON_ID_DESERT3 13
-#macro DANGEON_ID_DESERT4 14
 
 #macro DANGEON_ID_ICE1 21
 #macro DANGEON_ID_ICE2 22
 #macro DANGEON_ID_ICE3 23
-#macro DANGEON_ID_ICE4 24
 
 #macro DANGEON_ID_VOLCANO1 31
 #macro DANGEON_ID_VOLCANO2 32
 #macro DANGEON_ID_VOLCANO3 33
-#macro DANGEON_ID_VOLCANO4 34
+
+#macro DANGEON_CHALLENGE_NUM 2 //(-1する)
+#macro DANGEON_ID_CHALLENGE1 100
+#macro DANGEON_ID_CHALLENGE2 101
+#macro DANGEON_ID_CHALLENGE3 102
 
 global.dangeon_name = "TEST DANGEON 1";
 global.dangeon_floor = 1;
+global.dangeon_max_floor = 1;
 global.dangeon_type = DANGEON_TYPE_PLAIN;
 global.dangeon_id = DANGEON_ID_PLAIN1;
-global.dangeon_light_alpha = 0.7;
+global.dangeon_light_alpha = 0;

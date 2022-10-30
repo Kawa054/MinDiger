@@ -23,7 +23,9 @@ if(start_game){
 		draw_set_alpha(1);
 	}else{
 		global.button_hovering_active = true;
-		room_goto(rm_game);
+		
+		//ロード処理
+		room_goto(next_room);
 	}
 }else{
 	if(!is_setting_opening){

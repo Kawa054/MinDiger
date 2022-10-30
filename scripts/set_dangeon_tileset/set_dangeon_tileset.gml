@@ -15,7 +15,7 @@ function set_dangeon_tileset(){
 			for(var i = 0; i < array_length(lay_ids); i++){
 				var lay_id = layer_get_id(lay_ids[i]);
 				var tile_id = layer_tilemap_get_id (lay_id);
-				tilemap_tileset(tile_id, ts_plain_dangeon);
+				tilemap_tileset(tile_id, ts_desert_dangeon);
 			}
 		break;
 		

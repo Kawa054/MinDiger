@@ -5,5 +5,7 @@ function load_savedata(data_index){
 
 	//データを取得
 	var data = json_decode(str);
-	global.data = data;	
+	global.data = data;
+	
+	load_settings(data_index);
 }

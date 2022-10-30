@@ -6,3 +6,5 @@ wall_shadow_grid = ds_grid_create(15, 15);
 
 ds_grid_clear(dangeon_info, -1);
 ds_grid_clear(wall_shadow_grid, 0);
+
+instance_deactivate_object(obj_esc_window);

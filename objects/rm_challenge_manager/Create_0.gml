@@ -1,0 +1,1 @@
+challenge_dangeon_id = 0;

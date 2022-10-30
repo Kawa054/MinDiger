@@ -5,5 +5,5 @@ function get_playername(data_index){
 
 	//データを取得
 	var data = json_decode(str);
-	return data[? "player_name"];	
+	return data[? "player_name"];
 }

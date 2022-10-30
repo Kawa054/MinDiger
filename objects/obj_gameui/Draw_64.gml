@@ -39,4 +39,17 @@ if(global.active_draw_gui1){
 
 	//持ち物の描画
 	draw_sprite(spr_itemholder, 0, window_get_width() - sprite_get_width(spr_itemholder), window_get_height() - sprite_get_height(spr_itemholder));
+	//メインアイテム
+	if(obj_player.hold_item_index == -1){
+		draw_sprite(get_pickaxe_sprite(obj_player.pickaxe_id), 0, window_get_width() - sprite_get_width(spr_itemholder) + 75, window_get_height() - sprite_get_height(spr_itemholder) + 110);
+	}else{
+		draw_sprite(get_holditem_sprite(obj_player.hold_item_index), 0, window_get_width() - sprite_get_width(spr_itemholder) + 75, window_get_height() - sprite_get_height(spr_itemholder) + 110);		
+	}
+	
+	//サブアイテム
+	if(obj_player.hold_subitem_index == -1){
+		draw_sprite_stretched(get_pickaxe_sprite(obj_player.pickaxe_id), 0, window_get_width() - sprite_get_width(spr_itemholder) + 230, window_get_height() - sprite_get_height(spr_itemholder) + 95, 50, 50);
+	}else{
+		draw_sprite_stretched(get_holditem_sprite(obj_player.hold_subitem_index), 0, window_get_width() - sprite_get_width(spr_itemholder) + 230, window_get_height() - sprite_get_height(spr_itemholder) + 95, 50, 50);
+	}
 }
