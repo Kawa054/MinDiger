@@ -33,4 +33,7 @@ if(global.active_operate){
 
 	//アクションの処理
 	action(action_key, face);
+	
+	//インベントリ関係の処理
+	update_player_inventory();
 }

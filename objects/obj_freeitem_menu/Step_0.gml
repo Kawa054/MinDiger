@@ -66,6 +66,9 @@ if(global.button_hovering_active){
 		}
 	
 		if(decide_hover >= 0){
+			global.playerPickaxeId = pickaxe_id;
+			global.playerHealth = player_health;
+			global.playerInventory = item_nums;
 			create_popup(POPUP_ID_FREE_CONFIRM, POPUP_INFOTYPE_INFO, POPUP_RESPONSETYPE_YN, ["ダンジョンへ入ります", "準備はいいですか？"], [
 				make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B),
 				make_color_rgb(POPUP_MAINCOLOR_R, POPUP_MAINCOLOR_G, POPUP_MAINCOLOR_B)

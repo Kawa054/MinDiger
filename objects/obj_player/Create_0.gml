@@ -3,7 +3,7 @@ xspd = 0;
 yspd = 0;
 move_spd = 10;
 
-player_health = PLAYER_HEALTH_MAX-2.5;
+player_health = global.playerHealth;
 
 //会話などのアクション有効範囲
 action_width = 40;
@@ -28,3 +28,13 @@ dig[LEFT]  = spr_player_left_pickaxe;
 dig[DOWN]  = spr_player_down_pickaxe;
 
 face = DOWN;
+
+pickaxe_id = global.playerPickaxeId;
+inventory = global.playerInventory;
+inventory_num = 0;
+
+_hold_item = 0; //wheelで変更
+_hold_max = 0;
+
+hold_item_index = -1; //-1はピッケル
+hold_subitem_index = 0;

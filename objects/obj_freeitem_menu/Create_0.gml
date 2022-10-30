@@ -17,7 +17,7 @@ plus_hover = -1;
 minus_hover = -1;
 
 item_id = 0;
-item_nums = [1, 2, 3,  4, 5, 6,  7, 8, 9];
+item_nums = [0, 0, 0,  0, 0, 0,  0, 0, 0];
 
 x = (window_get_width() - width) / 2;
 y = (window_get_height() - height) / 2;

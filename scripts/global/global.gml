@@ -10,6 +10,10 @@ global.isLoading = false;
 
 global.is_in_house = false;
 
+global.playerPickaxeId = 0;
+global.playerHealth = 5;
+global.playerInventory = [0, 0, 0,  0, 0, 0,  0, 0, 0];
+
 global.active_operate = true;
 global.active_draw_gui1 = true;
 global.active_press_gui1 = true;
