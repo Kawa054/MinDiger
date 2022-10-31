@@ -6,6 +6,10 @@ global.button_hovering_active = true;
 #macro LEFT 2
 #macro DOWN 3
 
+#macro ENEMY_STATE_IDLE 0
+#macro ENEMY_STATE_CHASE 1
+#macro ENEMY_STATE_ATTACK 2
+
 //保存可能セーブデータ数の設定
 #macro SAVEDATA_NUM 4
 
