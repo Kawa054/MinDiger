@@ -9,13 +9,15 @@ var px = tilemap_get_cell_x_at_pixel(map_id, obj_player.x+64, obj_player.y+64);
 var py = tilemap_get_cell_y_at_pixel(map_id, obj_player.x+64, obj_player.y+64);
 var sx = floor(WALL_SHADOW_UPDATE_X/ 2);
 var sy = floor(WALL_SHADOW_UPDATE_Y/ 2);
-	
+
+draw_set_alpha(alpha);
 with(obj_player){
 	for(var i = -sx; i <= sx; i++){
 		for(var j = -sy; j <= sy; j++){
 			if(ds_grid_get(dangeon_manager.wall_shadow_grid, sx+i, sy+j) == 1){
-				draw_sprite_ext(spr_wall_shadow, 0, px*128+i*128-11, py*128+j*128-6, 1, 1, 0, c_black, 2);
+				draw_sprite(spr_wall_shadow, 0, px*128+i*128-11, py*128+j*128-6);
 			}
 		}
 	}
 }
+draw_set_alpha(1);

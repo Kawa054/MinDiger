@@ -1,0 +1,1 @@
+draw_sprite_stretched(icon_torch, 0, x, y, 128, 128);

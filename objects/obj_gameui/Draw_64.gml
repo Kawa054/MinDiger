@@ -43,7 +43,13 @@ if(global.active_draw_gui1){
 	if(obj_player.hold_item_index == -1){
 		draw_sprite(get_pickaxe_sprite(obj_player.pickaxe_id), 0, window_get_width() - sprite_get_width(spr_itemholder) + 75, window_get_height() - sprite_get_height(spr_itemholder) + 110);
 	}else{
-		draw_sprite(get_holditem_sprite(obj_player.hold_item_index), 0, window_get_width() - sprite_get_width(spr_itemholder) + 75, window_get_height() - sprite_get_height(spr_itemholder) + 110);		
+		draw_sprite(get_holditem_sprite(obj_player.hold_item_index), 0, window_get_width() - sprite_get_width(spr_itemholder) + 75, window_get_height() - sprite_get_height(spr_itemholder) + 110);
+		
+		draw_set_font(font_popup);
+		var color = c_black;
+		draw_set_color(color);
+		draw_text(window_get_width() - sprite_get_width(spr_itemholder) + 225, window_get_height() - sprite_get_height(spr_itemholder) + 233, string(obj_player.inventory[obj_player.hold_item_index]));
+		draw_set_font(font_main);
 	}
 	
 	//サブアイテム

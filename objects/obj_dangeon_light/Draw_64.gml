@@ -17,6 +17,14 @@ if(surface_exists(surface)){
 		draw_sprite_ext(spr_light, 0, x-viewX-130, y-viewY-180, 0.5, 0.5, 0, c_white, 1);
 	}
 	
+	with(obj_torch){
+		//gpu_set_blendmode(bm_subtract);
+		///draw_sprite_ext(spr_light, 0, x-viewX-130, y-viewY-180, 0.5 + random(0.005), 0.5 + random(0.005), 0, c_white, 1);		
+		//gpu_set_blendmode(bm_normal);
+		//gpu_set_blendmode(bm_add);
+		draw_sprite_ext(spr_light, 0, x-viewX-130, y-viewY-180, 0.5 + random(0.02), 0.5 + random(0.02), 0, c_yellow, 0.7);
+	}
+	
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
 	surface_reset_target();

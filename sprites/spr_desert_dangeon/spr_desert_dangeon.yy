@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 1389,
+  "bbox_right": 1407,
   "bbox_top": 0,
-  "bbox_bottom": 511,
+  "bbox_bottom": 1279,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 1408,
-  "height": 640,
+  "height": 1408,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"97d2cbdb-91e1-45fa-9dc6-e8146c6f482e","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"97d2cbdb-91e1-45fa-9dc6-e8146c6f482e","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"LayerId":{"name":"9cd5f4b6-f298-4478-af1c-eb4fc9bf7991","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_desert_dangeon","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","name":"97d2cbdb-91e1-45fa-9dc6-e8146c6f482e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ed918bb7-b3bb-40b0-a006-64bfd6a512a5","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ed918bb7-b3bb-40b0-a006-64bfd6a512a5","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"LayerId":{"name":"157b04f9-d639-4cbb-9aa1-ad8b3dd380c5","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_desert_dangeon","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","name":"ed918bb7-b3bb-40b0-a006-64bfd6a512a5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_desert_dangeon","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9d97a9f9-df6d-4eba-8ec2-b19b8fabfab3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97d2cbdb-91e1-45fa-9dc6-e8146c6f482e","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"11b027b0-5c8f-4e07-9164-3d359111e29d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed918bb7-b3bb-40b0-a006-64bfd6a512a5","path":"sprites/spr_desert_dangeon/spr_desert_dangeon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9cd5f4b6-f298-4478-af1c-eb4fc9bf7991","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"157b04f9-d639-4cbb-9aa1-ad8b3dd380c5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

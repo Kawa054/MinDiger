@@ -1,5 +1,5 @@
 function set_dangeon_tileset(){
-	var lay_ids = ["layer_ground", "layer_ground_pattern", "layer_walls", "layer_walls_pattern"];
+	var lay_ids = ["layer_ground", "layer_ground_pattern", "layer_walls", "layer_walls_pattern", "layer_wall_damage"];
 	
 	switch(global.dangeon_type){
 		case DANGEON_TYPE_PLAIN:
