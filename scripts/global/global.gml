@@ -18,6 +18,8 @@ global.active_operate = true;
 global.active_draw_gui1 = true;
 global.active_press_gui1 = true;
 
+global.preroom = rm_freemode;
+
 global.setting_key_W = "W";
 global.setting_key_A = "A";
 global.setting_key_S = "S";

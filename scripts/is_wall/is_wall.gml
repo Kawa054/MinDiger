@@ -8,19 +8,19 @@ function is_wall(tile_index){
 	//}
 	switch(global.dangeon_type){
 		case DANGEON_TYPE_PLAIN:
-			return (tile_index > 0 && tile_index <= 16);
+			return (tile_index > 0 && tile_index <= 16) || (tile_index >= 44 && tile_index <= 60) || (tile_index >= 66 && tile_index <= 82) || (tile_index >= 88 && tile_index <= 104);
 		break;
 		
 		case DANGEON_TYPE_DESERT:
-			return (tile_index > 0 && tile_index <= 16);
+			return (tile_index > 0 && tile_index <= 16) || (tile_index >= 44 && tile_index <= 60) || (tile_index >= 66 && tile_index <= 82) || (tile_index >= 88 && tile_index <= 104);
 		break;
 		
 		case DANGEON_TYPE_ICE:
-			return (tile_index > 0 && tile_index <= 16);
+			return (tile_index > 0 && tile_index <= 16) || (tile_index >= 44 && tile_index <= 60) || (tile_index >= 66 && tile_index <= 82) || (tile_index >= 88 && tile_index <= 104);
 		break;
 		
 		case DANGEON_TYPE_VOLCANO:
-			return (tile_index > 0 && tile_index <= 16);
+			return (tile_index > 0 && tile_index <= 16) || (tile_index >= 44 && tile_index <= 60) || (tile_index >= 66 && tile_index <= 82) || (tile_index >= 88 && tile_index <= 104);
 		break;
 	}
 }

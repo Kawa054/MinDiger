@@ -51,11 +51,12 @@ function run_popup_funcY(popup_id){
 		break;
 		
 		case POPUP_ID_FREE_CONFIRM:
+			global.preroom = rm_freemode;
 			room_goto(rm_dangeon);
 		break;
 		
 		case POPUP_ID_DANGEON_EXIT:
-			show_debug_message("test");
+			room_goto(global.preroom);
 		break;
 		
 		case POPUP_ID_DANGEON_GAME_EXIT:

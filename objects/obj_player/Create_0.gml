@@ -12,6 +12,9 @@ action_height = 40;
 is_action = false;
 is_using_pickaxe = false;
 
+px = 0;
+py = 0;
+
 //衝突時にめり込みを防ぐオブジェクト一覧
 collide_objects = [obj_wall, obj_npc, obj_block];
 
